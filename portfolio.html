@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Uday Barooah, Portfolio</title>
+<meta name="description" content="Deidentified portfolio of agentic workflows and dashboards built by Uday Barooah across professional sport, e-commerce and marketing.">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<nav class="nav"><div class="wrap">
+  <a class="brand" href="index.html">Uday Barooah</a>
+  <span class="links">
+    <a href="index.html">Resume</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="cover.html">Cover letter</a>
+  </span>
+</div></nav>
+
+<header class="masthead"><div class="wrap">
+  <h1>Portfolio</h1>
+  <p class="role">Agentic Workflows &amp; Dashboards</p>
+  <p class="lead">A selection of systems I have designed and built end to end, from data pipeline to interface. These power real operations in professional sport, e-commerce and marketing. The diagrams and mockups below are representative; client and athlete data has been removed.</p>
+</div></header>
+
+<div class="wrap">
+  <div class="note">Every example here is deidentified. Client and club names, athlete data and commercially sensitive figures have been replaced with representative content. Live walkthroughs of the real systems are available on request.</div>
+
+  <!-- 1. SPORT -->
+  <div class="proj">
+    <p class="kicker">Professional sport</p>
+    <h3>Athlete monitoring and live game dashboards</h3>
+    <p class="role-line"><b>Built with</b> R, Shiny, SQLite, Catapult and live tracking APIs, automated HTML report generation</p>
+    <p>A suite of dashboards for an elite rugby league program. A GPS and athlete-demand dashboard turns Catapult data into session loads, readiness and individual deep-dives, while a live in-game tool tracks ball-in-play, interchange and player minutes from real-time feeds. Pre and post-game reports are generated automatically as shareable pages for performance, medical and coaching staff.</p>
+    <div class="figure">
+      <svg viewBox="0 0 680 366" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mockup of a squad readiness and training load dashboard">
+        <rect width="680" height="366" fill="#ffffff"/>
+        <rect x="0" y="0" width="680" height="44" fill="#faf9f6"/>
+        <rect x="0" y="43" width="680" height="1" fill="#d8d6d0"/>
+        <text x="22" y="28" font-family="Arial" font-size="15" font-weight="bold" fill="#13524b">Training Monitor</text>
+        <text x="170" y="28" font-family="Arial" font-size="12" fill="#5d5d5d">Squad readiness, captured session to date</text>
+        <text x="600" y="28" font-family="Arial" font-size="12" fill="#8a8a8a">Round 16</text>
+        <!-- left: readiness list -->
+        <text x="22" y="72" font-family="Arial" font-size="11" font-weight="bold" letter-spacing="1" fill="#5d5d5d">READINESS</text>
+        <g font-family="Arial" font-size="12.5" fill="#1a1a1a">
+          <circle cx="28" cy="96" r="6" fill="#2f7d5b"/><text x="44" y="100">Player A</text><text x="250" y="100" text-anchor="end" fill="#5d5d5d">94%</text>
+          <circle cx="28" cy="124" r="6" fill="#c08a2d"/><text x="44" y="128">Player B</text><text x="250" y="128" text-anchor="end" fill="#5d5d5d">78%</text>
+          <circle cx="28" cy="152" r="6" fill="#2f7d5b"/><text x="44" y="156">Player C</text><text x="250" y="156" text-anchor="end" fill="#5d5d5d">91%</text>
+          <circle cx="28" cy="180" r="6" fill="#b0473a"/><text x="44" y="184">Player D</text><text x="250" y="184" text-anchor="end" fill="#5d5d5d">63%</text>
+          <circle cx="28" cy="208" r="6" fill="#2f7d5b"/><text x="44" y="212">Player E</text><text x="250" y="212" text-anchor="end" fill="#5d5d5d">88%</text>
+        </g>
+        <line x1="22" y1="232" x2="250" y2="232" stroke="#e4e2dd"/>
+        <!-- ADI tile -->
+        <rect x="22" y="248" width="228" height="92" rx="8" fill="#e7efed"/>
+        <text x="38" y="272" font-family="Arial" font-size="11" font-weight="bold" letter-spacing="1" fill="#13524b">ATHLETE DEMAND INDEX</text>
+        <text x="38" y="312" font-family="Arial" font-size="30" font-weight="bold" fill="#13524b">1.12</text>
+        <text x="120" y="312" font-family="Arial" font-size="12" fill="#2f7d5b">+0.8 SD vs baseline</text>
+        <text x="38" y="330" font-family="Arial" font-size="11" fill="#5d5d5d">mechanical work per minute</text>
+        <!-- right: weekly load bars -->
+        <text x="300" y="72" font-family="Arial" font-size="11" font-weight="bold" letter-spacing="1" fill="#5d5d5d">WEEKLY LOAD (m)</text>
+        <g>
+          <rect x="312" y="190" width="40" height="120" rx="3" fill="#2e7d72"/>
+          <rect x="364" y="150" width="40" height="160" rx="3" fill="#2e7d72"/>
+          <rect x="416" y="210" width="40" height="100" rx="3" fill="#2e7d72"/>
+          <rect x="468" y="120" width="40" height="190" rx="3" fill="#13524b"/>
+          <rect x="520" y="170" width="40" height="140" rx="3" fill="#2e7d72"/>
+          <rect x="572" y="232" width="40" height="78" rx="3" fill="#cfe0db"/>
+          <rect x="624" y="250" width="32" height="60" rx="3" fill="#cfe0db"/>
+        </g>
+        <line x1="300" y1="310" x2="660" y2="310" stroke="#d8d6d0"/>
+        <g font-family="Arial" font-size="10" fill="#8a8a8a" text-anchor="middle">
+          <text x="332" y="326">Mon</text><text x="384" y="326">Tue</text><text x="436" y="326">Wed</text><text x="488" y="326">Thu</text><text x="540" y="326">Fri</text><text x="592" y="326">Sat</text><text x="640" y="326">Sun</text>
+        </g>
+      </svg>
+      <div class="cap">Representative squad readiness and weekly load view. Real dashboards integrate GPS, force plate, wellness and screening data.</div>
+    </div>
+  </div>
+
+  <!-- 2. AIM -->
+  <div class="proj">
+    <p class="kicker">E-commerce operations</p>
+    <h3>Live Ops platform with agentic alerting</h3>
+    <p class="role-line"><b>Built with</b> Next.js, FastAPI, Postgres and Supabase, Shopify and 3PL fulfilment integrations, Claude for narrative generation, Railway</p>
+    <p>An operational monitoring platform for a direct-to-consumer eyewear brand. It unifies orders, fulfilment, stock forecast and tracking into one Live Ops view. An agentic layer watches the signals, raises plain-language flags, and posts a written briefing to Slack so the team catches problems before they cascade.</p>
+    <div class="figure">
+      <svg viewBox="0 0 680 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagram of data sources feeding a flags engine that posts a Slack briefing">
+        <rect width="680" height="320" fill="#ffffff"/>
+        <!-- sources -->
+        <text x="22" y="34" font-family="Arial" font-size="11" font-weight="bold" letter-spacing="1" fill="#5d5d5d">DATA SOURCES</text>
+        <g font-family="Arial" font-size="12.5" fill="#1a1a1a">
+          <rect x="22" y="48" width="150" height="40" rx="7" fill="#faf9f6" stroke="#d8d6d0"/><text x="38" y="73">Shopify orders</text>
+          <rect x="22" y="98" width="150" height="40" rx="7" fill="#faf9f6" stroke="#d8d6d0"/><text x="38" y="123">3PL fulfilment</text>
+          <rect x="22" y="148" width="150" height="40" rx="7" fill="#faf9f6" stroke="#d8d6d0"/><text x="38" y="173">Stock forecast</text>
+          <rect x="22" y="198" width="150" height="40" rx="7" fill="#faf9f6" stroke="#d8d6d0"/><text x="38" y="223">Tracking / transit</text>
+        </g>
+        <!-- arrows to engine -->
+        <g stroke="#9bbdb6" stroke-width="2" fill="none">
+          <path d="M172 68 C 210 68, 220 128, 258 138"/>
+          <path d="M172 118 C 210 118, 225 134, 258 144"/>
+          <path d="M172 168 C 210 168, 225 158, 258 152"/>
+          <path d="M172 218 C 210 218, 220 168, 258 158"/>
+        </g>
+        <!-- engine -->
+        <rect x="258" y="108" width="150" height="84" rx="9" fill="#13524b"/>
+        <text x="333" y="142" font-family="Arial" font-size="13.5" font-weight="bold" fill="#ffffff" text-anchor="middle">Flags engine</text>
+        <text x="333" y="164" font-family="Arial" font-size="11" fill="#cfe0db" text-anchor="middle">rules + thresholds</text>
+        <!-- arrow to outputs -->
+        <path d="M408 150 H 452" stroke="#13524b" stroke-width="2" fill="none" marker-end="url(#ar)"/>
+        <defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#13524b"/></marker></defs>
+        <!-- slack panel -->
+        <rect x="458" y="40" width="200" height="240" rx="9" fill="#faf9f6" stroke="#d8d6d0"/>
+        <text x="474" y="66" font-family="Arial" font-size="12" font-weight="bold" fill="#13524b">Daily Ops briefing</text>
+        <line x1="474" y1="76" x2="642" y2="76" stroke="#e4e2dd"/>
+        <g font-family="Arial" font-size="11">
+          <circle cx="480" cy="100" r="5" fill="#b0473a"/><text x="494" y="104" fill="#1a1a1a">12 orders past SLA</text>
+          <text x="494" y="120" fill="#8a8a8a">in UK fulfilment queue</text>
+          <circle cx="480" cy="150" r="5" fill="#c08a2d"/><text x="494" y="154" fill="#1a1a1a">Best seller low stock</text>
+          <text x="494" y="170" fill="#8a8a8a">9 days cover remaining</text>
+          <circle cx="480" cy="200" r="5" fill="#2f7d5b"/><text x="494" y="204" fill="#1a1a1a">On-time ship 96%</text>
+          <text x="494" y="220" fill="#8a8a8a">up 4 points week on week</text>
+        </g>
+        <text x="474" y="258" font-family="Arial" font-size="10.5" fill="#8a8a8a">Written by the agent, posted to Slack 8am</text>
+      </svg>
+      <div class="cap">Order, fulfilment and stock signals flow into a flags engine that writes a plain-language briefing to Slack each morning.</div>
+    </div>
+  </div>
+
+  <!-- 3. GROWTH OS -->
+  <div class="proj">
+    <p class="kicker">Marketing, Subject:RAW</p>
+    <h3>Growth OS demand-report engine</h3>
+    <p class="role-line"><b>Built with</b> Python, FastAPI, Postgres, Jinja and HTMX, search, places and ad-library data, Claude, Railway</p>
+    <p>A white-label engine that turns a clinic's website, location and segment into a credible one-page market report showing the local patient demand they are missing. It runs a pipeline from intake to data pull to demand calculation to assembly and quality check, then exports a branded report as both web page and PDF. Includes an SEO and visibility audit for the same clients.</p>
+    <div class="figure">
+      <svg viewBox="0 0 680 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Pipeline from intake through data pull, demand calculation and assembly to a one-page report">
+        <rect width="680" height="280" fill="#ffffff"/>
+        <text x="22" y="34" font-family="Arial" font-size="11" font-weight="bold" letter-spacing="1" fill="#5d5d5d">PIPELINE</text>
+        <!-- chevron steps -->
+        <g font-family="Arial" font-size="12" fill="#13524b">
+          <g>
+            <rect x="22" y="48" width="120" height="44" rx="7" fill="#e7efed"/><text x="82" y="75" text-anchor="middle">Intake</text>
+          </g>
+          <g>
+            <rect x="156" y="48" width="120" height="44" rx="7" fill="#e7efed"/><text x="216" y="69" text-anchor="middle">Data pull</text><text x="216" y="84" text-anchor="middle" font-size="9.5" fill="#5d5d5d">search, places, ads</text>
+          </g>
+          <g>
+            <rect x="290" y="48" width="120" height="44" rx="7" fill="#e7efed"/><text x="350" y="69" text-anchor="middle">Demand calc</text><text x="350" y="84" text-anchor="middle" font-size="9.5" fill="#5d5d5d">local volume</text>
+          </g>
+          <g>
+            <rect x="424" y="48" width="110" height="44" rx="7" fill="#e7efed"/><text x="479" y="75" text-anchor="middle">Assemble</text>
+          </g>
+          <g>
+            <rect x="548" y="48" width="110" height="44" rx="7" fill="#13524b"/><text x="603" y="69" text-anchor="middle" fill="#fff">QA</text><text x="603" y="84" text-anchor="middle" font-size="9.5" fill="#cfe0db">guardrails</text>
+          </g>
+        </g>
+        <g stroke="#9bbdb6" stroke-width="2" fill="none">
+          <path d="M142 70 H 156"/><path d="M276 70 H 290"/><path d="M410 70 H 424"/><path d="M534 70 H 548"/>
+        </g>
+        <!-- report thumbnail -->
+        <rect x="232" y="124" width="216" height="140" rx="8" fill="#ffffff" stroke="#d8d6d0"/>
+        <rect x="232" y="124" width="216" height="30" rx="8" fill="#13524b"/>
+        <text x="248" y="144" font-family="Arial" font-size="11" font-weight="bold" fill="#fff">Demand Report</text>
+        <rect x="248" y="168" width="184" height="9" rx="2" fill="#e4e2dd"/>
+        <rect x="248" y="184" width="150" height="9" rx="2" fill="#e4e2dd"/>
+        <rect x="248" y="208" width="56" height="40" rx="4" fill="#e7efed"/><text x="276" y="232" font-family="Arial" font-size="13" font-weight="bold" fill="#13524b" text-anchor="middle">2.4k</text>
+        <rect x="312" y="208" width="56" height="40" rx="4" fill="#e7efed"/><text x="340" y="232" font-family="Arial" font-size="13" font-weight="bold" fill="#13524b" text-anchor="middle">38%</text>
+        <rect x="376" y="208" width="56" height="40" rx="4" fill="#e7efed"/><text x="404" y="232" font-family="Arial" font-size="13" font-weight="bold" fill="#13524b" text-anchor="middle">$11k</text>
+        <text x="340" y="262" font-family="Arial" font-size="9.5" fill="#8a8a8a" text-anchor="middle">searches / share captured / monthly value missed</text>
+      </svg>
+      <div class="cap">A website and postcode become a one-page report. The QA step applies claim guardrails before anything ships.</div>
+    </div>
+  </div>
+
+  <!-- 4. CREATIVE AUTOMATION -->
+  <div class="proj">
+    <p class="kicker">Marketing, Subject:RAW</p>
+    <h3>Automated creative and graphics workflow</h3>
+    <p class="role-line"><b>Built with</b> Custom app, brand-token system, templated render pipeline</p>
+    <p>A custom application that automates repeatable design and graphics production for an agency. A brief and a brand token set drive an automated render step; a human reviews, and approved variants flow straight to output. It standardises brand output across clients and lets a small team produce a far larger volume of consistent work.</p>
+    <div class="figure">
+      <svg viewBox="0 0 680 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Loop from brief and brand tokens through automated render and review to output assets">
+        <rect width="680" height="250" fill="#ffffff"/>
+        <g font-family="Arial" font-size="12.5" fill="#1a1a1a">
+          <rect x="22" y="60" width="120" height="48" rx="8" fill="#faf9f6" stroke="#d8d6d0"/><text x="82" y="80" text-anchor="middle">Brief</text><text x="82" y="96" text-anchor="middle" font-size="10" fill="#8a8a8a">+ brand tokens</text>
+          <rect x="186" y="60" width="130" height="48" rx="8" fill="#13524b"/><text x="251" y="80" text-anchor="middle" fill="#fff">Auto-render</text><text x="251" y="96" text-anchor="middle" font-size="10" fill="#cfe0db">templated</text>
+          <rect x="360" y="60" width="120" height="48" rx="8" fill="#e7efed"/><text x="420" y="88" text-anchor="middle" fill="#13524b">Review</text>
+        </g>
+        <g stroke="#13524b" stroke-width="2" fill="none" marker-end="url(#ar2)">
+          <path d="M142 84 H 186"/><path d="M316 84 H 360"/>
+        </g>
+        <defs><marker id="ar2" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#13524b"/></marker></defs>
+        <!-- loop back -->
+        <path d="M420 108 V 150 H 251 V 108" stroke="#c08a2d" stroke-width="2" fill="none" marker-end="url(#aro)"/>
+        <defs><marker id="aro" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#c08a2d"/></marker></defs>
+        <text x="335" y="146" font-family="Arial" font-size="10" fill="#c08a2d" text-anchor="middle">revise</text>
+        <!-- output thumbnails -->
+        <path d="M480 84 H 520" stroke="#13524b" stroke-width="2" fill="none" marker-end="url(#ar2)"/>
+        <rect x="528" y="40" width="42" height="42" rx="5" fill="#e7efed" stroke="#cfe0db"/>
+        <rect x="578" y="40" width="42" height="42" rx="5" fill="#cfe0db"/>
+        <rect x="628" y="40" width="30" height="42" rx="5" fill="#e7efed" stroke="#cfe0db"/>
+        <rect x="528" y="90" width="42" height="42" rx="5" fill="#cfe0db"/>
+        <rect x="578" y="90" width="42" height="42" rx="5" fill="#e7efed" stroke="#cfe0db"/>
+        <rect x="628" y="90" width="30" height="42" rx="5" fill="#cfe0db"/>
+        <text x="592" y="150" font-family="Arial" font-size="10" fill="#8a8a8a" text-anchor="middle">on-brand output set</text>
+      </svg>
+      <div class="cap">Briefs become on-brand assets through a templated render step, with a human review loop before output.</div>
+    </div>
+  </div>
+
+  <!-- 5. RETAIL DECK -->
+  <div class="proj">
+    <p class="kicker">Finance and retail</p>
+    <h3>Sales-deck generator</h3>
+    <p class="role-line"><b>Built with</b> Python, FastAPI, python-pptx, LibreOffice headless, Claude, Railway</p>
+    <p>A tool that converts raw market notes into a real, editable PowerPoint deck. It extracts a brand kit from a template, builds native editable charts rather than flat images, and supports slide-by-slide refinement through plain-English feedback, with live preview and PDF export.</p>
+    <div class="figure">
+      <svg viewBox="0 0 680 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Notes become structured slides built into an editable PowerPoint deck">
+        <rect width="680" height="250" fill="#ffffff"/>
+        <g font-family="Arial" font-size="12.5">
+          <rect x="22" y="64" width="118" height="74" rx="8" fill="#faf9f6" stroke="#d8d6d0"/><text x="81" y="92" text-anchor="middle" fill="#1a1a1a">Raw notes</text>
+          <rect x="40" y="104" width="82" height="6" rx="2" fill="#e4e2dd"/><rect x="40" y="116" width="60" height="6" rx="2" fill="#e4e2dd"/>
+          <rect x="176" y="64" width="128" height="74" rx="8" fill="#13524b"/><text x="240" y="96" text-anchor="middle" fill="#fff">Claude</text><text x="240" y="114" text-anchor="middle" font-size="10" fill="#cfe0db">structured slides</text>
+          <rect x="340" y="64" width="128" height="74" rx="8" fill="#e7efed"/><text x="404" y="96" text-anchor="middle" fill="#13524b">python-pptx</text><text x="404" y="114" text-anchor="middle" font-size="10" fill="#5d5d5d">native charts</text>
+        </g>
+        <g stroke="#13524b" stroke-width="2" fill="none" marker-end="url(#ar3)">
+          <path d="M140 101 H 176"/><path d="M304 101 H 340"/><path d="M468 101 H 504"/>
+        </g>
+        <defs><marker id="ar3" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#13524b"/></marker></defs>
+        <!-- editable deck -->
+        <rect x="508" y="48" width="150" height="106" rx="8" fill="#ffffff" stroke="#d8d6d0"/>
+        <rect x="508" y="48" width="150" height="22" rx="8" fill="#13524b"/><text x="520" y="63" font-family="Arial" font-size="10" fill="#fff">Editable .pptx</text>
+        <rect x="522" y="84" width="60" height="7" rx="2" fill="#e4e2dd"/>
+        <!-- mini bar chart -->
+        <rect x="522" y="104" width="10" height="30" fill="#2e7d72"/><rect x="538" y="114" width="10" height="20" fill="#2e7d72"/><rect x="554" y="98" width="10" height="36" fill="#13524b"/>
+        <rect x="600" y="98" width="44" height="36" rx="3" fill="#e7efed"/><text x="622" y="121" font-family="Arial" font-size="11" font-weight="bold" fill="#13524b" text-anchor="middle">+18%</text>
+        <text x="583" y="176" font-family="Arial" font-size="10" fill="#8a8a8a" text-anchor="middle">live preview and PDF export</text>
+      </svg>
+      <div class="cap">Notes become a real editable deck with native charts, refined slide by slide in plain English.</div>
+    </div>
+  </div>
+
+  <section>
+    <h2 class="sec">More</h2>
+    <p class="actions"><a href="index.html">View resume</a><a href="cover.html">Cover letter</a></p>
+  </section>
+</div>
+
+<footer><div class="wrap">
+  Uday Barooah &middot; <a href="mailto:uday.barooahsc@gmail.com">uday.barooahsc@gmail.com</a>
+</div></footer>
+</body>
+</html>
