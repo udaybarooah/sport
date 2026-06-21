@@ -56,6 +56,7 @@ h2.sec{font-size:14px;letter-spacing:0.14em;text-transform:uppercase;color:var(-
 .entry{margin:0 0 22px}
 .entry .top{display:flex;justify-content:space-between;align-items:baseline;gap:16px}
 .entry .org{font-weight:700;font-size:17px}
+.entry .org .logo{height:17px;width:auto;max-width:54px;vertical-align:-3px;margin-right:8px;object-fit:contain}
 .entry .org .loc{font-weight:400;color:var(--soft-grey);font-size:14px;margin-left:8px}
 .entry .dates{color:var(--grey);font-size:14px;white-space:nowrap}
 .entry .title{font-style:italic;color:var(--accent);font-size:15px;margin:1px 0 4px}
