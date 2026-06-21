@@ -5,7 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Uday Barooah, Portfolio</title>
 <meta name="description" content="Deidentified portfolio of agentic workflows and dashboards built by Uday Barooah across professional sport, e-commerce and marketing.">
-<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/style.css?v=2">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter+Tight:wght@400;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 <nav class="nav"><div class="wrap">
@@ -20,226 +23,503 @@
 <header class="masthead"><div class="wrap">
   <h1>Portfolio</h1>
   <p class="role">Agentic Workflows &amp; Dashboards</p>
-  <p class="lead">A selection of systems I have designed and built end to end, from data pipeline to interface. These power real operations in professional sport, e-commerce and marketing. The diagrams and mockups below are representative; client and athlete data has been removed.</p>
+  <p class="lead">Each system below is a short carousel: how the pipeline works, the variables it tracks, an example of the real output, and the result. Swipe or use the arrows. Every figure is deidentified; the logic, variables and branding are real.</p>
 </div></header>
 
 <div class="wrap">
-  <div class="note">Every example here is deidentified. Client and club names, athlete data and commercially sensitive figures have been replaced with representative content. Live walkthroughs of the real systems are available on request.</div>
+<div class="note">Everything here is deidentified. Client and club names, athlete data and sensitive figures are replaced with representative content. Each example output is rendered in that system's real brand to show the range of work. Live walkthroughs are available on request.</div>
 
-  <!-- 1. SPORT -->
-  <div class="proj">
-    <p class="kicker">Professional sport</p>
-    <h3>Athlete monitoring and live game dashboards</h3>
-    <p class="role-line"><b>Built with</b> R, Shiny, SQLite, Catapult and live tracking APIs, automated HTML report generation</p>
-    <p>A suite of dashboards for an elite rugby league program. A GPS and athlete-demand dashboard turns Catapult data into session loads, readiness and individual deep-dives, while a live in-game tool tracks ball-in-play, interchange and player minutes from real-time feeds. Pre and post-game reports are generated automatically as shareable pages for performance, medical and coaching staff.</p>
-    <div class="figure">
-      <svg viewBox="0 0 680 366" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mockup of a squad readiness and training load dashboard">
-        <rect width="680" height="366" fill="#ffffff"/>
-        <rect x="0" y="0" width="680" height="44" fill="#faf9f6"/>
-        <rect x="0" y="43" width="680" height="1" fill="#d8d6d0"/>
-        <text x="22" y="28" font-family="Arial" font-size="15" font-weight="bold" fill="#13524b">Training Monitor</text>
-        <text x="170" y="28" font-family="Arial" font-size="12" fill="#5d5d5d">Squad readiness, captured session to date</text>
-        <text x="600" y="28" font-family="Arial" font-size="12" fill="#8a8a8a">Round 16</text>
-        <!-- left: readiness list -->
-        <text x="22" y="72" font-family="Arial" font-size="11" font-weight="bold" letter-spacing="1" fill="#5d5d5d">READINESS</text>
-        <g font-family="Arial" font-size="12.5" fill="#1a1a1a">
-          <circle cx="28" cy="96" r="6" fill="#2f7d5b"/><text x="44" y="100">Player A</text><text x="250" y="100" text-anchor="end" fill="#5d5d5d">94%</text>
-          <circle cx="28" cy="124" r="6" fill="#c08a2d"/><text x="44" y="128">Player B</text><text x="250" y="128" text-anchor="end" fill="#5d5d5d">78%</text>
-          <circle cx="28" cy="152" r="6" fill="#2f7d5b"/><text x="44" y="156">Player C</text><text x="250" y="156" text-anchor="end" fill="#5d5d5d">91%</text>
-          <circle cx="28" cy="180" r="6" fill="#b0473a"/><text x="44" y="184">Player D</text><text x="250" y="184" text-anchor="end" fill="#5d5d5d">63%</text>
-          <circle cx="28" cy="208" r="6" fill="#2f7d5b"/><text x="44" y="212">Player E</text><text x="250" y="212" text-anchor="end" fill="#5d5d5d">88%</text>
-        </g>
-        <line x1="22" y1="232" x2="250" y2="232" stroke="#e4e2dd"/>
-        <!-- ADI tile -->
-        <rect x="22" y="248" width="228" height="92" rx="8" fill="#e7efed"/>
-        <text x="38" y="272" font-family="Arial" font-size="11" font-weight="bold" letter-spacing="1" fill="#13524b">ATHLETE DEMAND INDEX</text>
-        <text x="38" y="312" font-family="Arial" font-size="30" font-weight="bold" fill="#13524b">1.12</text>
-        <text x="120" y="312" font-family="Arial" font-size="12" fill="#2f7d5b">+0.8 SD vs baseline</text>
-        <text x="38" y="330" font-family="Arial" font-size="11" fill="#5d5d5d">mechanical work per minute</text>
-        <!-- right: weekly load bars -->
-        <text x="300" y="72" font-family="Arial" font-size="11" font-weight="bold" letter-spacing="1" fill="#5d5d5d">WEEKLY LOAD (m)</text>
-        <g>
-          <rect x="312" y="190" width="40" height="120" rx="3" fill="#2e7d72"/>
-          <rect x="364" y="150" width="40" height="160" rx="3" fill="#2e7d72"/>
-          <rect x="416" y="210" width="40" height="100" rx="3" fill="#2e7d72"/>
-          <rect x="468" y="120" width="40" height="190" rx="3" fill="#13524b"/>
-          <rect x="520" y="170" width="40" height="140" rx="3" fill="#2e7d72"/>
-          <rect x="572" y="232" width="40" height="78" rx="3" fill="#cfe0db"/>
-          <rect x="624" y="250" width="32" height="60" rx="3" fill="#cfe0db"/>
-        </g>
-        <line x1="300" y1="310" x2="660" y2="310" stroke="#d8d6d0"/>
-        <g font-family="Arial" font-size="10" fill="#8a8a8a" text-anchor="middle">
-          <text x="332" y="326">Mon</text><text x="384" y="326">Tue</text><text x="436" y="326">Wed</text><text x="488" y="326">Thu</text><text x="540" y="326">Fri</text><text x="592" y="326">Sat</text><text x="640" y="326">Sun</text>
-        </g>
-      </svg>
-      <div class="cap">Representative squad readiness and weekly load view. Real dashboards integrate GPS, force plate, wellness and screening data.</div>
+<!-- ============ 1. SPORT ============ -->
+<div class="proj">
+  <p class="kicker">Professional sport</p>
+  <h3>Athlete monitoring and live game suite</h3>
+  <p class="role-line">R, Shiny, SQLite, Catapult, StatsPerform and live tracking APIs, automated report generation, Supabase</p>
+  <p class="lead2">Three connected tools for an elite rugby league program: a GPS load dashboard, a gait-asymmetry and mechanical-work monitor, and a live in-game interchange and ball-in-play tracker that produces an automatic post-game report.</p>
+  <div class="carousel" data-carousel>
+    <div class="track">
+      <div class="slide">
+        <span class="stag">How it works</span>
+        <h4>Raw tracking data becomes session loads, risk flags and game reports</h4>
+        <div class="fig">
+          <svg viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sport data pipeline">
+            <rect width="720" height="300" fill="#fff"/>
+            <text x="20" y="24" font-family="Inter Tight,Arial" font-size="11" font-weight="bold" letter-spacing="1" fill="#5d5d5d">INPUTS</text>
+            <g font-family="Inter Tight,Arial" font-size="11.5" fill="#1a1a1a">
+              <rect x="20" y="36" width="150" height="32" rx="7" fill="#faf9f6" stroke="#d8d6d0"/><text x="32" y="56">Catapult GPS</text>
+              <rect x="20" y="76" width="150" height="32" rx="7" fill="#faf9f6" stroke="#d8d6d0"/><text x="32" y="96">Force plate / VALD</text>
+              <rect x="20" y="116" width="150" height="32" rx="7" fill="#faf9f6" stroke="#d8d6d0"/><text x="32" y="136">StatsPerform / LiveXY</text>
+              <rect x="20" y="156" width="150" height="32" rx="7" fill="#faf9f6" stroke="#d8d6d0"/><text x="32" y="176">Wellness / screening</text>
+            </g>
+            <g stroke="#9bbdb6" stroke-width="1.6" fill="none"><path d="M170 52 H 200 V 110"/><path d="M170 92 H 200"/><path d="M170 132 H 200 V 110"/><path d="M170 172 H 200 V 110"/></g>
+            <rect x="200" y="92" width="120" height="36" rx="7" fill="#e7efed"/><text x="260" y="115" font-family="Inter Tight,Arial" font-size="12" fill="#13524b" text-anchor="middle">Process + store</text>
+            <g stroke="#13524b" stroke-width="2" fill="none" marker-end="url(#sa)"><path d="M320 100 C 360 100, 360 60, 396 60"/><path d="M320 110 H 396"/><path d="M320 120 C 360 120, 360 170, 396 170"/></g>
+            <defs><marker id="sa" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#13524b"/></marker></defs>
+            <g font-family="Inter Tight,Arial" font-size="11.5">
+              <rect x="396" y="42" width="150" height="36" rx="7" fill="#faf9f6" stroke="#d8d6d0"/><text x="408" y="64" fill="#1a1a1a">GPS load dashboard</text>
+              <rect x="396" y="92" width="150" height="36" rx="7" fill="#faf9f6" stroke="#d8d6d0"/><text x="408" y="114" fill="#1a1a1a">ADI risk monitor</text>
+              <rect x="396" y="152" width="150" height="36" rx="7" fill="#faf9f6" stroke="#d8d6d0"/><text x="408" y="174" fill="#1a1a1a">Live game tracker</text>
+            </g>
+            <g stroke="#9bbdb6" stroke-width="1.6" fill="none" marker-end="url(#sa)"><path d="M546 60 H 580 V 104"/><path d="M546 110 H 580"/><path d="M546 170 H 580 V 116"/></g>
+            <rect x="580" y="92" width="124" height="40" rx="8" fill="#13524b"/><text x="642" y="110" font-family="Inter Tight,Arial" font-size="11.5" font-weight="bold" fill="#fff" text-anchor="middle">Auto reports</text><text x="642" y="125" font-family="Inter Tight,Arial" font-size="9.5" fill="#cfe0db" text-anchor="middle">staff + AI weekly</text>
+          </svg>
+        </div>
+      </div>
+      <div class="slide">
+        <span class="stag">What it tracks</span>
+        <h4>The exact metrics, defined the way the club spreadsheet defines them</h4>
+        <div class="grp"><div class="gh">GPS load</div>
+          <div class="vrow"><span class="k">Speed exposure</span><span class="v">max vel &divide; profile max</span></div>
+          <div class="vrow"><span class="k">High-speed running</span><span class="v">V5+ / V7+ distance</span></div>
+          <div class="vrow"><span class="k">Work rate</span><span class="v">metres / minute</span></div>
+          <div class="vrow"><span class="k">Accel-decel efforts</span><span class="v">AccDec count</span></div>
+        </div>
+        <div class="grp"><div class="gh">Gait &amp; mechanical (ADI)</div>
+          <div class="vrow"><span class="k">Asymmetry flag</span><span class="v">&ge; 1.5pp vs norm, last 3 sessions</span></div>
+          <div class="vrow"><span class="k">Relative speed bands</span><span class="v">40&ndash;90% of player max</span></div>
+          <div class="vrow"><span class="k">Drill cost</span><span class="v">% diff vs player history</span></div>
+        </div>
+        <div class="grp"><div class="gh">Live game</div>
+          <div class="vrow"><span class="k">Ball-in-play</span><span class="v">% of game time</span></div>
+          <div class="vrow"><span class="k">Work-rest ratio</span><span class="v">rest &divide; work</span></div>
+          <div class="vrow"><span class="k">Interchanges</span><span class="v">8-limit, HIA free</span></div>
+        </div>
+      </div>
+      <div class="slide">
+        <span class="stag">Example output</span>
+        <h4>Automated post-game report, in club colours</h4>
+        <div class="fig">
+          <svg viewBox="0 0 720 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Post-game report mockup">
+            <rect width="720" height="320" fill="#141414"/>
+            <rect x="0" y="0" width="720" height="48" fill="#0a0a0a"/>
+            <circle cx="30" cy="24" r="11" fill="#1a1a1a" stroke="#e8b84b" stroke-width="1.5"/>
+            <text x="50" y="22" font-family="Inter Tight,Arial" font-size="13" font-weight="700" fill="#fff">POST-GAME REPORT</text>
+            <text x="50" y="37" font-family="Inter Tight,Arial" font-size="10" fill="#8a8a8a">Round 16 · NRL · vs opponent</text>
+            <text x="700" y="30" font-family="Inter Tight,Arial" font-size="11" fill="#e8b84b" text-anchor="end">WIN 24&ndash;18</text>
+            <!-- BIP cards -->
+            <g font-family="Inter Tight,Arial">
+              <rect x="20" y="66" width="150" height="70" rx="8" fill="#1e1e1e"/><text x="34" y="88" font-size="10" fill="#8a8a8a">BALL IN PLAY</text><text x="34" y="120" font-family="JetBrains Mono,monospace" font-size="26" font-weight="700" fill="#e8b84b">57%</text>
+              <rect x="180" y="66" width="150" height="70" rx="8" fill="#1e1e1e"/><text x="194" y="88" font-size="10" fill="#8a8a8a">WORK-REST</text><text x="194" y="120" font-family="JetBrains Mono,monospace" font-size="26" font-weight="700" fill="#fff">1.3:1</text>
+              <rect x="340" y="66" width="150" height="70" rx="8" fill="#1e1e1e"/><text x="354" y="88" font-size="10" fill="#8a8a8a">H1 / H2 BIP</text><text x="354" y="120" font-family="JetBrains Mono,monospace" font-size="22" font-weight="700" fill="#fff">61 / 53</text>
+              <rect x="500" y="66" width="200" height="70" rx="8" fill="#1e1e1e"/><text x="514" y="88" font-size="10" fill="#8a8a8a">CYCLES &ge; 3 MIN</text><text x="514" y="120" font-family="JetBrains Mono,monospace" font-size="26" font-weight="700" fill="#fff">4</text>
+            </g>
+            <!-- period bars -->
+            <text x="20" y="162" font-family="Inter Tight,Arial" font-size="10" fill="#8a8a8a">BIP BY 20-MIN PERIOD vs SEASON AVG</text>
+            <g font-family="JetBrains Mono,monospace" font-size="9" fill="#cfcfcf">
+              <text x="20" y="184">0-20</text><rect x="64" y="176" width="180" height="9" rx="2" fill="#333"/><rect x="64" y="176" width="124" height="9" rx="2" fill="#e8b84b"/><text x="252" y="184">62%</text>
+              <text x="20" y="202">20-40</text><rect x="64" y="194" width="180" height="9" rx="2" fill="#333"/><rect x="64" y="194" width="108" height="9" rx="2" fill="#e8b84b"/><text x="252" y="202">59%</text>
+              <text x="20" y="220">40-60</text><rect x="64" y="212" width="180" height="9" rx="2" fill="#333"/><rect x="64" y="212" width="96" height="9" rx="2" fill="#e8b84b"/><text x="252" y="220">54%</text>
+              <text x="20" y="238">60-80</text><rect x="64" y="230" width="180" height="9" rx="2" fill="#333"/><rect x="64" y="230" width="86" height="9" rx="2" fill="#e8b84b"/><text x="252" y="238">51%</text>
+            </g>
+            <!-- player minutes -->
+            <text x="300" y="162" font-family="Inter Tight,Arial" font-size="10" fill="#8a8a8a">PLAYER MINUTES vs SEASON AVG</text>
+            <g font-family="JetBrains Mono,monospace" font-size="10" fill="#cfcfcf">
+              <text x="300" y="184">#7 Halfback</text><text x="560" y="184">78:20</text><text x="700" y="184" text-anchor="end" fill="#3ea76f">+4</text>
+              <text x="300" y="204">#9 Hooker</text><text x="560" y="204">62:10</text><text x="700" y="204" text-anchor="end" fill="#3ea76f">+2</text>
+              <text x="300" y="224">#13 Lock</text><text x="560" y="224">54:40</text><text x="700" y="224" text-anchor="end" fill="#d76b5e">-6</text>
+              <text x="300" y="244">#8 Prop</text><text x="560" y="244">41:05</text><text x="700" y="244" text-anchor="end" fill="#8a8a8a">0</text>
+            </g>
+            <rect x="300" y="262" width="400" height="40" rx="7" fill="#1e1e1e"/><text x="314" y="280" font-family="Inter Tight,Arial" font-size="10" fill="#8a8a8a">GAIT ASYMMETRY</text><text x="314" y="295" font-family="Inter Tight,Arial" font-size="11" fill="#e8b84b">1 flag: #13 decel +2.1pp right over last 3 sessions</text>
+          </svg>
+        </div>
+      </div>
+      <div class="slide">
+        <span class="stag">Result</span>
+        <h4>Hours of manual reporting removed each week</h4>
+        <div class="impact">
+          <div class="stat"><div class="big">~30 min</div><div class="lab">saved per GPS session, raw Catapult export to a finished report</div></div>
+          <div class="stat"><div class="big">~45 min</div><div class="lab">saved per game, the live tracker replaces a manual game log</div></div>
+          <div class="stat"><div class="big">auto flags</div><div class="lab">gait asymmetry and overload surfaced against each player's own baseline</div></div>
+          <div class="stat"><div class="big">one shared view</div><div class="lab">performance, medical and coaching staff read from the same numbers</div></div>
+        </div>
+      </div>
     </div>
+    <button class="car-btn car-prev" aria-label="Previous">&lsaquo;</button>
+    <button class="car-btn car-next" aria-label="Next">&rsaquo;</button>
+    <div class="dots"></div>
   </div>
+</div>
 
-  <!-- 2. AIM -->
-  <div class="proj">
-    <p class="kicker">E-commerce operations</p>
-    <h3>Live Ops platform with agentic alerting</h3>
-    <p class="role-line"><b>Built with</b> Next.js, FastAPI, Postgres and Supabase, Shopify and 3PL fulfilment integrations, Claude for narrative generation, Railway</p>
-    <p>An operational monitoring platform for a direct-to-consumer eyewear brand. It unifies orders, fulfilment, stock forecast and tracking into one Live Ops view. An agentic layer watches the signals, raises plain-language flags, and posts a written briefing to Slack so the team catches problems before they cascade.</p>
-    <div class="figure">
-      <svg viewBox="0 0 680 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagram of data sources feeding a flags engine that posts a Slack briefing">
-        <rect width="680" height="320" fill="#ffffff"/>
-        <!-- sources -->
-        <text x="22" y="34" font-family="Arial" font-size="11" font-weight="bold" letter-spacing="1" fill="#5d5d5d">DATA SOURCES</text>
-        <g font-family="Arial" font-size="12.5" fill="#1a1a1a">
-          <rect x="22" y="48" width="150" height="40" rx="7" fill="#faf9f6" stroke="#d8d6d0"/><text x="38" y="73">Shopify orders</text>
-          <rect x="22" y="98" width="150" height="40" rx="7" fill="#faf9f6" stroke="#d8d6d0"/><text x="38" y="123">3PL fulfilment</text>
-          <rect x="22" y="148" width="150" height="40" rx="7" fill="#faf9f6" stroke="#d8d6d0"/><text x="38" y="173">Stock forecast</text>
-          <rect x="22" y="198" width="150" height="40" rx="7" fill="#faf9f6" stroke="#d8d6d0"/><text x="38" y="223">Tracking / transit</text>
-        </g>
-        <!-- arrows to engine -->
-        <g stroke="#9bbdb6" stroke-width="2" fill="none">
-          <path d="M172 68 C 210 68, 220 128, 258 138"/>
-          <path d="M172 118 C 210 118, 225 134, 258 144"/>
-          <path d="M172 168 C 210 168, 225 158, 258 152"/>
-          <path d="M172 218 C 210 218, 220 168, 258 158"/>
-        </g>
-        <!-- engine -->
-        <rect x="258" y="108" width="150" height="84" rx="9" fill="#13524b"/>
-        <text x="333" y="142" font-family="Arial" font-size="13.5" font-weight="bold" fill="#ffffff" text-anchor="middle">Flags engine</text>
-        <text x="333" y="164" font-family="Arial" font-size="11" fill="#cfe0db" text-anchor="middle">rules + thresholds</text>
-        <!-- arrow to outputs -->
-        <path d="M408 150 H 452" stroke="#13524b" stroke-width="2" fill="none" marker-end="url(#ar)"/>
-        <defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#13524b"/></marker></defs>
-        <!-- slack panel -->
-        <rect x="458" y="40" width="200" height="240" rx="9" fill="#faf9f6" stroke="#d8d6d0"/>
-        <text x="474" y="66" font-family="Arial" font-size="12" font-weight="bold" fill="#13524b">Daily Ops briefing</text>
-        <line x1="474" y1="76" x2="642" y2="76" stroke="#e4e2dd"/>
-        <g font-family="Arial" font-size="11">
-          <circle cx="480" cy="100" r="5" fill="#b0473a"/><text x="494" y="104" fill="#1a1a1a">12 orders past SLA</text>
-          <text x="494" y="120" fill="#8a8a8a">in UK fulfilment queue</text>
-          <circle cx="480" cy="150" r="5" fill="#c08a2d"/><text x="494" y="154" fill="#1a1a1a">Best seller low stock</text>
-          <text x="494" y="170" fill="#8a8a8a">9 days cover remaining</text>
-          <circle cx="480" cy="200" r="5" fill="#2f7d5b"/><text x="494" y="204" fill="#1a1a1a">On-time ship 96%</text>
-          <text x="494" y="220" fill="#8a8a8a">up 4 points week on week</text>
-        </g>
-        <text x="474" y="258" font-family="Arial" font-size="10.5" fill="#8a8a8a">Written by the agent, posted to Slack 8am</text>
-      </svg>
-      <div class="cap">Order, fulfilment and stock signals flow into a flags engine that writes a plain-language briefing to Slack each morning.</div>
+<!-- ============ 2. AIM ============ -->
+<div class="proj">
+  <p class="kicker">E-commerce operations</p>
+  <h3>Live Ops platform with agentic alerting</h3>
+  <p class="role-line">Next.js, FastAPI, Postgres / Supabase, Shopify + 3PL APIs, Claude, Railway, GitHub Actions</p>
+  <p class="lead2">A monitoring platform for a direct-to-consumer brand that catches fulfilment, stock and service problems before customers notice, and writes the team a plain-language briefing every morning.</p>
+  <div class="carousel" data-carousel>
+    <div class="track">
+      <div class="slide">
+        <span class="stag">How it works</span>
+        <h4>A flags engine runs every 10 minutes and feeds three surfaces</h4>
+        <div class="fig">
+          <svg viewBox="0 0 720 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="AIM pipeline">
+            <rect width="720" height="320" fill="#fff"/>
+            <text x="20" y="24" font-family="Inter Tight,Arial" font-size="11" font-weight="bold" letter-spacing="1" fill="#5d5d5d">SOURCES (scheduled pulls)</text>
+            <g font-family="Inter Tight,Arial" font-size="11.5" fill="#1a1a1a">
+              <rect x="20" y="36" width="150" height="32" rx="7" fill="#faf9f6" stroke="#d8d6d0"/><text x="32" y="56">Shopify orders · 15m</text>
+              <rect x="20" y="76" width="150" height="32" rx="7" fill="#faf9f6" stroke="#d8d6d0"/><text x="32" y="96">Mintsoft 3PL · 10m</text>
+              <rect x="20" y="116" width="150" height="32" rx="7" fill="#faf9f6" stroke="#d8d6d0"/><text x="32" y="136">Gifting sheet · 60m</text>
+              <rect x="20" y="156" width="150" height="32" rx="7" fill="#faf9f6" stroke="#d8d6d0"/><text x="32" y="176">Tracking events</text>
+            </g>
+            <g stroke="#9bbdb6" stroke-width="1.6" fill="none"><path d="M170 52 H 206 V 110"/><path d="M170 92 H 206"/><path d="M170 132 H 206 V 110"/><path d="M170 172 H 206 V 110"/></g>
+            <rect x="206" y="92" width="116" height="36" rx="7" fill="#e7efed"/><text x="264" y="115" font-family="Inter Tight,Arial" font-size="12" fill="#13524b" text-anchor="middle">Supabase</text>
+            <path d="M322 110 H 356" stroke="#13524b" stroke-width="2" fill="none" marker-end="url(#aa)"/>
+            <defs><marker id="aa" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#13524b"/></marker></defs>
+            <rect x="356" y="84" width="128" height="52" rx="9" fill="#13524b"/><text x="420" y="108" font-family="Inter Tight,Arial" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle">Flags engine</text><text x="420" y="125" font-family="Inter Tight,Arial" font-size="10" fill="#cfe0db" text-anchor="middle">10m · self-resolving</text>
+            <g stroke="#13524b" stroke-width="2" fill="none" marker-end="url(#aa)"><path d="M484 97 C 524 97, 524 58, 556 58"/><path d="M484 110 H 556"/><path d="M484 123 C 524 123, 524 230, 556 230"/></g>
+            <rect x="556" y="40" width="148" height="36" rx="8" fill="#faf9f6" stroke="#d8d6d0"/><text x="568" y="58" font-family="Inter Tight,Arial" font-size="11.5" font-weight="bold" fill="#13524b">Live Ops board</text><text x="568" y="71" font-family="Inter Tight,Arial" font-size="9.5" fill="#8a8a8a">refresh 60s</text>
+            <rect x="556" y="90" width="148" height="36" rx="8" fill="#faf9f6" stroke="#d8d6d0"/><text x="568" y="108" font-family="Inter Tight,Arial" font-size="11.5" font-weight="bold" fill="#c0392b">Red alerts</text><text x="568" y="121" font-family="Inter Tight,Arial" font-size="9.5" fill="#8a8a8a">new reds to Slack</text>
+            <rect x="556" y="200" width="148" height="100" rx="8" fill="#faf9f6" stroke="#d8d6d0"/><text x="568" y="220" font-family="Inter Tight,Arial" font-size="11.5" font-weight="bold" fill="#13524b">9am digest</text>
+            <g font-family="Inter Tight,Arial" font-size="10" fill="#5d5d5d"><text x="568" y="240">SQL to JSON</text><text x="568" y="258">to Claude prose</text><text x="568" y="276">verify every number</text><text x="568" y="294">to Slack</text></g>
+          </svg>
+        </div>
+      </div>
+      <div class="slide">
+        <span class="stag">What it tracks</span>
+        <h4>Self-resolving flags, each with a real trigger threshold</h4>
+        <div class="grp"><div class="gh">Fulfilment</div>
+          <div class="vrow"><span class="k">Stuck pre-pick</span><span class="v">&gt; 24 business hrs</span></div>
+          <div class="vrow"><span class="k">Despatched, no delivery</span><span class="v">&gt; 10d amber / 14d red</span></div>
+        </div>
+        <div class="grp"><div class="gh">Inventory</div>
+          <div class="vrow"><span class="k">Oversold risk (Shopify &gt; 3PL)</span><span class="v">&gt; 20 units</span></div>
+          <div class="vrow"><span class="k">Low days of cover (90d burn)</span><span class="v">&lt; 7 days</span></div>
+          <div class="vrow"><span class="k">Top-seller out of stock</span><span class="v">top 3 by 30d sales</span></div>
+        </div>
+        <div class="grp"><div class="gh">Service &amp; quality</div>
+          <div class="vrow"><span class="k">CS reply SLA breached</span><span class="v">&gt; 24 hrs</span></div>
+          <div class="vrow"><span class="k">WISMO surge</span><span class="v">&gt; 5 &amp; &gt; 2&times; 7d avg</span></div>
+          <div class="vrow"><span class="k">Wrong-item rate (7d)</span><span class="v">&gt; 2%</span></div>
+        </div>
+      </div>
+      <div class="slide">
+        <span class="stag">Example output</span>
+        <h4>The Live Ops board, in its warm editorial style</h4>
+        <div class="fig">
+          <svg viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="AIM Live Ops board mockup">
+            <rect width="720" height="300" fill="#faf6ee"/>
+            <text x="20" y="30" font-family="Fraunces,Georgia,serif" font-size="17" font-weight="600" fill="#1a1814">Live Ops</text>
+            <text x="700" y="30" font-family="JetBrains Mono,monospace" font-size="10" fill="#8a8680" text-anchor="end">synced 14:32</text>
+            <line x1="20" y1="42" x2="700" y2="42" stroke="#e4dfd6"/>
+            <g font-family="Inter Tight,Arial">
+              <rect x="20" y="54" width="160" height="62" rx="8" fill="#fbeae6" stroke="#eccfc7"/><text x="34" y="92" font-family="JetBrains Mono,monospace" font-size="26" font-weight="700" fill="#c0392b">3</text><text x="34" y="108" font-size="10.5" fill="#5a5650">red flags</text>
+              <rect x="188" y="54" width="160" height="62" rx="8" fill="#fcf3e0" stroke="#ecdcb8"/><text x="202" y="92" font-family="JetBrains Mono,monospace" font-size="26" font-weight="700" fill="#b8730f">11</text><text x="202" y="108" font-size="10.5" fill="#5a5650">amber flags</text>
+              <rect x="356" y="54" width="160" height="62" rx="8" fill="#e6f0ea" stroke="#c7ddd0"/><text x="370" y="92" font-family="JetBrains Mono,monospace" font-size="26" font-weight="700" fill="#2d6a4f">128</text><text x="370" y="108" font-size="10.5" fill="#5a5650">healthy in flight</text>
+              <rect x="524" y="54" width="176" height="62" rx="8" fill="#fff" stroke="#e4dfd6"/><text x="538" y="92" font-family="JetBrains Mono,monospace" font-size="26" font-weight="700" fill="#d4622a">142</text><text x="538" y="108" font-size="10.5" fill="#5a5650">orders today</text>
+            </g>
+            <text x="20" y="140" font-family="Inter Tight,Arial" font-size="10" font-weight="700" letter-spacing="1" fill="#8a8680">ORDER JOURNEY</text>
+            <g font-family="JetBrains Mono,monospace" font-size="10" text-anchor="middle">
+              <rect x="20" y="148" width="96" height="34" rx="5" fill="#1a1814"/><text x="68" y="170" fill="#fcf3e0">141 Recv</text>
+              <rect x="124" y="148" width="96" height="34" rx="5" fill="#3a3530"/><text x="172" y="170" fill="#fcf3e0">120 Pick</text>
+              <rect x="228" y="148" width="96" height="34" rx="5" fill="#5a5650"/><text x="276" y="170" fill="#fff">96 Pack</text>
+              <rect x="332" y="148" width="96" height="34" rx="5" fill="#8a8680"/><text x="380" y="170" fill="#fff">88 Label</text>
+              <rect x="436" y="148" width="120" height="34" rx="5" fill="#d4622a"/><text x="496" y="170" fill="#fff">132 Despatch</text>
+              <rect x="564" y="148" width="136" height="34" rx="5" fill="#2d6a4f"/><text x="632" y="170" fill="#fff">124 Delivered</text>
+            </g>
+            <text x="20" y="208" font-family="Inter Tight,Arial" font-size="10" font-weight="700" letter-spacing="1" fill="#8a8680">OPEN FLAGS</text>
+            <g font-family="Inter Tight,Arial" font-size="11.5" fill="#1a1814">
+              <rect x="20" y="216" width="680" height="0.8" fill="#e4dfd6"/>
+              <circle cx="28" cy="232" r="5" fill="#c0392b"/><text x="42" y="236">12 orders stuck pre-pick</text><text x="700" y="236" text-anchor="end" font-family="JetBrains Mono,monospace" font-size="10" fill="#8a8680">26h</text>
+              <circle cx="28" cy="256" r="5" fill="#c0392b"/><text x="42" y="260">Top-seller out of stock</text><text x="700" y="260" text-anchor="end" font-family="JetBrains Mono,monospace" font-size="10" fill="#8a8680">UK</text>
+              <circle cx="28" cy="280" r="5" fill="#b8730f"/><text x="42" y="284">WISMO surge, 18 in 24h</text><text x="700" y="284" text-anchor="end" font-family="JetBrains Mono,monospace" font-size="10" fill="#8a8680">2.4x avg</text>
+            </g>
+          </svg>
+        </div>
+        <div class="slack"><b>9am Slack digest</b><br>Order volume came in strong, 142 shipped, up about 18% on the seven-day average. Twelve orders missed their pick window overnight and one has been sitting 26 hours, that is the priority this morning. WISMO is now a third of contacts, up six points. Matte black needs reordering today, four days cover against a 21 day lead time.</div>
+      </div>
+      <div class="slide">
+        <span class="stag">Result</span>
+        <h4>Problems caught before they cascade</h4>
+        <div class="impact">
+          <div class="stat"><div class="big">every 10 min</div><div class="lab">full operational sweep, no manual checking of 3PL, Shopify and inbox</div></div>
+          <div class="stat"><div class="big">UK &rarr; UK + China</div><div class="lab">3PL split I migrated, lower shipping cost and faster transit and returns</div></div>
+          <div class="stat"><div class="big">100% verified</div><div class="lab">every number in the morning briefing is checked against source before it posts</div></div>
+          <div class="stat"><div class="big">before the customer</div><div class="lab">stuck parcels, oversell and stockouts surface before a support ticket lands</div></div>
+        </div>
+      </div>
     </div>
+    <button class="car-btn car-prev" aria-label="Previous">&lsaquo;</button>
+    <button class="car-btn car-next" aria-label="Next">&rsaquo;</button>
+    <div class="dots"></div>
   </div>
+</div>
 
-  <!-- 3. GROWTH OS -->
-  <div class="proj">
-    <p class="kicker">Marketing, Subject:RAW</p>
-    <h3>Growth OS demand-report engine</h3>
-    <p class="role-line"><b>Built with</b> Python, FastAPI, Postgres, Jinja and HTMX, search, places and ad-library data, Claude, Railway</p>
-    <p>A white-label engine that turns a clinic's website, location and segment into a credible one-page market report showing the local patient demand they are missing. It runs a pipeline from intake to data pull to demand calculation to assembly and quality check, then exports a branded report as both web page and PDF. Includes an SEO and visibility audit for the same clients.</p>
-    <div class="figure">
-      <svg viewBox="0 0 680 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Pipeline from intake through data pull, demand calculation and assembly to a one-page report">
-        <rect width="680" height="280" fill="#ffffff"/>
-        <text x="22" y="34" font-family="Arial" font-size="11" font-weight="bold" letter-spacing="1" fill="#5d5d5d">PIPELINE</text>
-        <!-- chevron steps -->
-        <g font-family="Arial" font-size="12" fill="#13524b">
-          <g>
-            <rect x="22" y="48" width="120" height="44" rx="7" fill="#e7efed"/><text x="82" y="75" text-anchor="middle">Intake</text>
-          </g>
-          <g>
-            <rect x="156" y="48" width="120" height="44" rx="7" fill="#e7efed"/><text x="216" y="69" text-anchor="middle">Data pull</text><text x="216" y="84" text-anchor="middle" font-size="9.5" fill="#5d5d5d">search, places, ads</text>
-          </g>
-          <g>
-            <rect x="290" y="48" width="120" height="44" rx="7" fill="#e7efed"/><text x="350" y="69" text-anchor="middle">Demand calc</text><text x="350" y="84" text-anchor="middle" font-size="9.5" fill="#5d5d5d">local volume</text>
-          </g>
-          <g>
-            <rect x="424" y="48" width="110" height="44" rx="7" fill="#e7efed"/><text x="479" y="75" text-anchor="middle">Assemble</text>
-          </g>
-          <g>
-            <rect x="548" y="48" width="110" height="44" rx="7" fill="#13524b"/><text x="603" y="69" text-anchor="middle" fill="#fff">QA</text><text x="603" y="84" text-anchor="middle" font-size="9.5" fill="#cfe0db">guardrails</text>
-          </g>
-        </g>
-        <g stroke="#9bbdb6" stroke-width="2" fill="none">
-          <path d="M142 70 H 156"/><path d="M276 70 H 290"/><path d="M410 70 H 424"/><path d="M534 70 H 548"/>
-        </g>
-        <!-- report thumbnail -->
-        <rect x="232" y="124" width="216" height="140" rx="8" fill="#ffffff" stroke="#d8d6d0"/>
-        <rect x="232" y="124" width="216" height="30" rx="8" fill="#13524b"/>
-        <text x="248" y="144" font-family="Arial" font-size="11" font-weight="bold" fill="#fff">Demand Report</text>
-        <rect x="248" y="168" width="184" height="9" rx="2" fill="#e4e2dd"/>
-        <rect x="248" y="184" width="150" height="9" rx="2" fill="#e4e2dd"/>
-        <rect x="248" y="208" width="56" height="40" rx="4" fill="#e7efed"/><text x="276" y="232" font-family="Arial" font-size="13" font-weight="bold" fill="#13524b" text-anchor="middle">2.4k</text>
-        <rect x="312" y="208" width="56" height="40" rx="4" fill="#e7efed"/><text x="340" y="232" font-family="Arial" font-size="13" font-weight="bold" fill="#13524b" text-anchor="middle">38%</text>
-        <rect x="376" y="208" width="56" height="40" rx="4" fill="#e7efed"/><text x="404" y="232" font-family="Arial" font-size="13" font-weight="bold" fill="#13524b" text-anchor="middle">$11k</text>
-        <text x="340" y="262" font-family="Arial" font-size="9.5" fill="#8a8a8a" text-anchor="middle">searches / share captured / monthly value missed</text>
-      </svg>
-      <div class="cap">A website and postcode become a one-page report. The QA step applies claim guardrails before anything ships.</div>
+<!-- ============ 3. GROWTH OS ============ -->
+<div class="proj">
+  <p class="kicker">Marketing, Subject:RAW</p>
+  <h3>Growth OS demand-report engine</h3>
+  <p class="role-line">Python, FastAPI, Postgres, Jinja / HTMX, DataForSEO + Google Places + Meta Ad Library, Claude, Railway</p>
+  <p class="lead2">Give it a clinic website, postcode and segment and it returns a credible one-page report of the local patient demand the clinic is missing, built from real search and competitor data.</p>
+  <div class="carousel" data-carousel>
+    <div class="track">
+      <div class="slide">
+        <span class="stag">How it works</span>
+        <h4>Parallel data pulls, a demand calc, then a compliance gate</h4>
+        <div class="fig">
+          <svg viewBox="0 0 720 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Growth OS pipeline">
+            <rect width="720" height="320" fill="#fff"/>
+            <rect x="16" y="24" width="120" height="48" rx="8" fill="#e7efed"/><text x="76" y="44" font-family="Inter Tight,Arial" font-size="12" fill="#13524b" text-anchor="middle">Intake</text><text x="76" y="60" font-family="Inter Tight,Arial" font-size="9" fill="#5d5d5d" text-anchor="middle">URL · postcode · segment</text>
+            <path d="M136 48 H 168" stroke="#13524b" stroke-width="2" fill="none" marker-end="url(#gg)"/>
+            <defs><marker id="gg" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#13524b"/></marker></defs>
+            <rect x="168" y="24" width="130" height="48" rx="8" fill="#13524b"/><text x="233" y="44" font-family="Inter Tight,Arial" font-size="12" fill="#fff" text-anchor="middle">Lane detection</text><text x="233" y="60" font-family="Inter Tight,Arial" font-size="9" fill="#cfe0db" text-anchor="middle">Claude reads the site</text>
+            <g stroke="#9bbdb6" stroke-width="1.6" fill="none"><path d="M298 48 H 326 V 110 H 356"/><path d="M298 48 H 326 V 158 H 356"/><path d="M298 48 H 326 V 206 H 356"/></g>
+            <g font-family="Inter Tight,Arial" font-size="11" fill="#1a1a1a">
+              <rect x="356" y="92" width="200" height="36" rx="7" fill="#faf9f6" stroke="#d8d6d0"/><text x="368" y="114">Search volume · DataForSEO</text>
+              <rect x="356" y="140" width="200" height="36" rx="7" fill="#faf9f6" stroke="#d8d6d0"/><text x="368" y="162">Competitors · Places + ads</text>
+              <rect x="356" y="188" width="200" height="36" rx="7" fill="#faf9f6" stroke="#d8d6d0"/><text x="368" y="210">SERP audit · rank · map</text>
+            </g>
+            <g stroke="#9bbdb6" stroke-width="1.6" fill="none"><path d="M556 110 H 584 V 150"/><path d="M556 158 H 584"/><path d="M556 206 H 584 V 166"/></g>
+            <rect x="584" y="140" width="120" height="40" rx="8" fill="#e7efed"/><text x="644" y="158" font-family="Inter Tight,Arial" font-size="11" fill="#13524b" text-anchor="middle">Demand calc</text><text x="644" y="172" font-family="Inter Tight,Arial" font-size="9" fill="#5d5d5d" text-anchor="middle">+ narrative</text>
+            <path d="M644 180 V 232 H 233 V 256" stroke="#13524b" stroke-width="2" fill="none" marker-end="url(#gg)"/>
+            <rect x="168" y="256" width="130" height="44" rx="8" fill="#13524b"/><text x="233" y="276" font-family="Inter Tight,Arial" font-size="12" fill="#fff" text-anchor="middle">QA gate</text><text x="233" y="291" font-family="Inter Tight,Arial" font-size="9" fill="#cfe0db" text-anchor="middle">compliance denylist</text>
+            <path d="M298 278 H 340" stroke="#13524b" stroke-width="2" fill="none" marker-end="url(#gg)"/>
+            <rect x="340" y="256" width="150" height="44" rx="8" fill="#faf9f6" stroke="#d8d6d0"/><text x="415" y="276" font-family="Inter Tight,Arial" font-size="12" font-weight="bold" fill="#13524b" text-anchor="middle">Report</text><text x="415" y="291" font-family="Inter Tight,Arial" font-size="9" fill="#8a8a8a" text-anchor="middle">HTML + PDF, white-label</text>
+          </svg>
+        </div>
+      </div>
+      <div class="slide">
+        <span class="stag">What it calculates</span>
+        <h4>A transparent demand funnel, every coefficient shown</h4>
+        <div class="fig">
+          <svg viewBox="0 0 720 290" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Demand funnel formula">
+            <rect width="720" height="290" fill="#fff"/>
+            <g font-family="Inter Tight,Arial">
+              <rect x="40" y="18" width="640" height="32" rx="6" fill="#e7efed"/><text x="56" y="39" font-size="13" fill="#13524b">Local monthly searches (real data)</text><text x="664" y="39" font-size="13" font-weight="bold" fill="#13524b" text-anchor="end">1,200</text>
+              <text x="360" y="66" font-size="10.5" fill="#8a8a8a" text-anchor="middle">&times; catchment share 0.70</text>
+              <rect x="90" y="74" width="540" height="32" rx="6" fill="#e7efed"/><text x="106" y="95" font-size="13" fill="#13524b">In-area searches</text><text x="614" y="95" font-size="13" font-weight="bold" fill="#13524b" text-anchor="end">840</text>
+              <text x="360" y="122" font-size="10.5" fill="#8a8a8a" text-anchor="middle">&times; click-through 0.25 &times; booking rate 0.08</text>
+              <rect x="150" y="130" width="420" height="32" rx="6" fill="#e7efed"/><text x="166" y="151" font-size="13" fill="#13524b">Potential new patients / month</text><text x="554" y="151" font-size="13" font-weight="bold" fill="#13524b" text-anchor="end">17</text>
+              <text x="360" y="178" font-size="10.5" fill="#8a8a8a" text-anchor="middle">&minus; captured (visibility share 0.25)</text>
+              <rect x="210" y="186" width="300" height="32" rx="6" fill="#fbeae8"/><text x="226" y="207" font-size="13" fill="#b0473a">Missed new patients / month</text><text x="494" y="207" font-size="13" font-weight="bold" fill="#b0473a" text-anchor="end">13</text>
+              <text x="360" y="234" font-size="10.5" fill="#8a8a8a" text-anchor="middle">&times; avg first-visit value $110</text>
+              <rect x="240" y="242" width="240" height="36" rx="6" fill="#264653"/><text x="256" y="265" font-size="14" fill="#fff">Missed value / month</text><text x="464" y="265" font-size="15" font-weight="bold" fill="#E5C079" text-anchor="end">$1,450</text>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="slide">
+        <span class="stag">Example output</span>
+        <h4>The one-page report, in the Subject:RAW house style</h4>
+        <div class="fig">
+          <svg viewBox="0 0 720 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Demand report mockup">
+            <rect width="720" height="320" fill="#F4ECDC"/>
+            <rect x="20" y="18" width="680" height="78" rx="8" fill="#264653"/>
+            <text x="40" y="44" font-family="Inter Tight,Arial" font-size="10.5" fill="#7A8B8E" letter-spacing="1.5">DEMAND ANALYSIS · YOUR SUBURB</text>
+            <text x="40" y="72" font-family="Fraunces,Georgia,serif" font-size="20" font-weight="600" fill="#F4ECDC">The patients searching that you miss</text>
+            <text x="680" y="62" font-family="Fraunces,Georgia,serif" font-size="26" font-weight="600" fill="#E5C079" text-anchor="end">$1,850/mo</text>
+            <text x="20" y="122" font-family="Inter Tight,Arial" font-size="10.5" font-weight="700" letter-spacing="1" fill="#9C5236">BY SERVICE LINE</text>
+            <g font-family="Inter Tight,Arial" font-size="11.5" fill="#264653">
+              <text x="20" y="144">Service</text><text x="360" y="144" text-anchor="end" fill="#7A8B8E">searches</text><text x="500" y="144" text-anchor="end" fill="#7A8B8E">missed</text><text x="690" y="144" text-anchor="end" fill="#7A8B8E">value/mo</text>
+              <line x1="20" y1="152" x2="690" y2="152" stroke="#d9caa8"/>
+              <text x="20" y="172">Physiotherapy</text><text x="360" y="172" text-anchor="end">1,200</text><text x="500" y="172" text-anchor="end">13</text><text x="690" y="172" text-anchor="end" font-weight="700" fill="#9C5236">$1,400</text>
+              <text x="20" y="192">Occupational therapy</text><text x="360" y="192" text-anchor="end">380</text><text x="500" y="192" text-anchor="end">4</text><text x="690" y="192" text-anchor="end" font-weight="700" fill="#9C5236">$800</text>
+              <text x="20" y="212">Podiatry</text><text x="360" y="212" text-anchor="end">220</text><text x="500" y="212" text-anchor="end">2</text><text x="690" y="212" text-anchor="end" font-weight="700" fill="#9C5236">$250</text>
+            </g>
+            <rect x="20" y="230" width="330" height="74" rx="7" fill="#FAF6EE" stroke="#e3d7bb"/>
+            <text x="34" y="250" font-family="Inter Tight,Arial" font-size="10.5" font-weight="700" fill="#9C5236">WHO IS CAPTURING IT</text>
+            <g font-family="Inter Tight,Arial" font-size="11" fill="#264653"><text x="34" y="270">Competitor A, 187 reviews, 3 ads</text><text x="34" y="288">Competitor B, 164 reviews, 1 ad</text></g>
+            <rect x="362" y="230" width="338" height="74" rx="7" fill="#FAF6EE" stroke="#e3d7bb"/>
+            <text x="376" y="250" font-family="Inter Tight,Arial" font-size="10.5" font-weight="700" fill="#9C5236">PROFILE GAPS</text>
+            <g font-family="Inter Tight,Arial" font-size="11" fill="#264653"><text x="376" y="270">43 reviews vs local median 130</text><text x="376" y="288">No opening hours, 2 photos</text></g>
+          </svg>
+        </div>
+      </div>
+      <div class="slide">
+        <span class="stag">Result</span>
+        <h4>A credible report in under a minute</h4>
+        <div class="impact">
+          <div class="stat"><div class="big">~45s</div><div class="lab">to generate, versus around 30 minutes of manual research per lead</div></div>
+          <div class="stat"><div class="big">~$0.30</div><div class="lab">data and model cost per report, with a hard ceiling enforced in code</div></div>
+          <div class="stat"><div class="big">real or labelled</div><div class="lab">every number is pulled data or a stated conservative assumption, nothing invented</div></div>
+          <div class="stat"><div class="big">compliance gate</div><div class="lab">AHPRA / TGA denylist checked on every report before it can be sent</div></div>
+        </div>
+      </div>
     </div>
+    <button class="car-btn car-prev" aria-label="Previous">&lsaquo;</button>
+    <button class="car-btn car-next" aria-label="Next">&rsaquo;</button>
+    <div class="dots"></div>
   </div>
+</div>
 
-  <!-- 4. CREATIVE AUTOMATION -->
-  <div class="proj">
-    <p class="kicker">Marketing, Subject:RAW</p>
-    <h3>Automated creative and graphics workflow</h3>
-    <p class="role-line"><b>Built with</b> Custom app, brand-token system, templated render pipeline</p>
-    <p>A custom application that automates repeatable design and graphics production for an agency. A brief and a brand token set drive an automated render step; a human reviews, and approved variants flow straight to output. It standardises brand output across clients and lets a small team produce a far larger volume of consistent work.</p>
-    <div class="figure">
-      <svg viewBox="0 0 680 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Loop from brief and brand tokens through automated render and review to output assets">
-        <rect width="680" height="250" fill="#ffffff"/>
-        <g font-family="Arial" font-size="12.5" fill="#1a1a1a">
-          <rect x="22" y="60" width="120" height="48" rx="8" fill="#faf9f6" stroke="#d8d6d0"/><text x="82" y="80" text-anchor="middle">Brief</text><text x="82" y="96" text-anchor="middle" font-size="10" fill="#8a8a8a">+ brand tokens</text>
-          <rect x="186" y="60" width="130" height="48" rx="8" fill="#13524b"/><text x="251" y="80" text-anchor="middle" fill="#fff">Auto-render</text><text x="251" y="96" text-anchor="middle" font-size="10" fill="#cfe0db">templated</text>
-          <rect x="360" y="60" width="120" height="48" rx="8" fill="#e7efed"/><text x="420" y="88" text-anchor="middle" fill="#13524b">Review</text>
-        </g>
-        <g stroke="#13524b" stroke-width="2" fill="none" marker-end="url(#ar2)">
-          <path d="M142 84 H 186"/><path d="M316 84 H 360"/>
-        </g>
-        <defs><marker id="ar2" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#13524b"/></marker></defs>
-        <!-- loop back -->
-        <path d="M420 108 V 150 H 251 V 108" stroke="#c08a2d" stroke-width="2" fill="none" marker-end="url(#aro)"/>
-        <defs><marker id="aro" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#c08a2d"/></marker></defs>
-        <text x="335" y="146" font-family="Arial" font-size="10" fill="#c08a2d" text-anchor="middle">revise</text>
-        <!-- output thumbnails -->
-        <path d="M480 84 H 520" stroke="#13524b" stroke-width="2" fill="none" marker-end="url(#ar2)"/>
-        <rect x="528" y="40" width="42" height="42" rx="5" fill="#e7efed" stroke="#cfe0db"/>
-        <rect x="578" y="40" width="42" height="42" rx="5" fill="#cfe0db"/>
-        <rect x="628" y="40" width="30" height="42" rx="5" fill="#e7efed" stroke="#cfe0db"/>
-        <rect x="528" y="90" width="42" height="42" rx="5" fill="#cfe0db"/>
-        <rect x="578" y="90" width="42" height="42" rx="5" fill="#e7efed" stroke="#cfe0db"/>
-        <rect x="628" y="90" width="30" height="42" rx="5" fill="#cfe0db"/>
-        <text x="592" y="150" font-family="Arial" font-size="10" fill="#8a8a8a" text-anchor="middle">on-brand output set</text>
-      </svg>
-      <div class="cap">Briefs become on-brand assets through a templated render step, with a human review loop before output.</div>
+<!-- ============ 4. RETAIL DECK ============ -->
+<div class="proj">
+  <p class="kicker">Finance and retail</p>
+  <h3>Sales-deck generator</h3>
+  <p class="role-line">Python, FastAPI, python-pptx, LibreOffice headless, Claude (forced structured output), Railway</p>
+  <p class="lead2">Turns raw market notes into a real, editable PowerPoint deck. It extracts the brand kit from a template, writes native editable charts rather than flat images, and supports slide-by-slide refinement in plain English.</p>
+  <div class="carousel" data-carousel>
+    <div class="track">
+      <div class="slide">
+        <span class="stag">How it works</span>
+        <h4>Notes become structured slides, then a native editable deck</h4>
+        <div class="fig">
+          <svg viewBox="0 0 720 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Deck builder pipeline">
+            <rect width="720" height="250" fill="#fff"/>
+            <g font-family="Inter Tight,Arial" font-size="12">
+              <rect x="20" y="60" width="120" height="76" rx="8" fill="#faf9f6" stroke="#d8d6d0"/><text x="80" y="88" text-anchor="middle" fill="#1a1a1a">Raw notes</text><rect x="38" y="100" width="84" height="6" rx="2" fill="#e4e2dd"/><rect x="38" y="112" width="60" height="6" rx="2" fill="#e4e2dd"/>
+              <rect x="176" y="60" width="130" height="76" rx="8" fill="#13524b"/><text x="241" y="92" text-anchor="middle" fill="#fff">Claude</text><text x="241" y="110" text-anchor="middle" font-size="9.5" fill="#cfe0db">structured slide schema</text>
+              <rect x="342" y="60" width="130" height="76" rx="8" fill="#e7efed"/><text x="407" y="92" text-anchor="middle" fill="#13524b">python-pptx</text><text x="407" y="110" text-anchor="middle" font-size="9.5" fill="#5d5d5d">brand from template</text>
+            </g>
+            <g stroke="#13524b" stroke-width="2" fill="none" marker-end="url(#dd)"><path d="M140 98 H 176"/><path d="M306 98 H 342"/><path d="M472 98 H 508"/></g>
+            <defs><marker id="dd" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#13524b"/></marker></defs>
+            <rect x="508" y="56" width="192" height="84" rx="8" fill="#faf9f6" stroke="#d8d6d0"/><text x="524" y="80" font-family="Inter Tight,Arial" font-size="12" font-weight="700" fill="#13524b">Editable .pptx</text><text x="524" y="98" font-family="Inter Tight,Arial" font-size="10" fill="#8a8a8a">native charts, not images</text><text x="524" y="120" font-family="Inter Tight,Arial" font-size="10" fill="#8a8a8a">live preview + PDF export</text>
+            <text x="80" y="176" font-family="Inter Tight,Arial" font-size="10" fill="#8a8a8a" text-anchor="middle">layout types: title · big_stat · chart · flow · two_column · quote</text>
+          </svg>
+        </div>
+      </div>
+      <div class="slide">
+        <span class="stag">What it controls</span>
+        <h4>Brand pulled from the template, content forced to a schema</h4>
+        <div class="grp"><div class="gh">Brand extracted from template OOXML</div>
+          <div class="vrow"><span class="k">Palette</span><span class="v">accent 1&ndash;6 from theme</span></div>
+          <div class="vrow"><span class="k">Fonts</span><span class="v">major + minor typeface</span></div>
+          <div class="vrow"><span class="k">Logos</span><span class="v">extracted from media</span></div>
+        </div>
+        <div class="grp"><div class="gh">Slide schema (Claude structured output)</div>
+          <div class="vrow"><span class="k">Layout types</span><span class="v">10 (title, big_stat, chart, flow...)</span></div>
+          <div class="vrow"><span class="k">Chart types</span><span class="v">bar, column, line, pie, area</span></div>
+          <div class="vrow"><span class="k">Per slide</span><span class="v">kicker, takeaway, strapline, notes</span></div>
+        </div>
+      </div>
+      <div class="slide">
+        <span class="stag">Example output</span>
+        <h4>A finished deck, in the client's brand (Firetrail shown)</h4>
+        <div class="fig">
+          <svg viewBox="0 0 720 270" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Deck filmstrip mockup">
+            <rect width="720" height="270" fill="#eef1f0"/>
+            <!-- slide 1: cover -->
+            <rect x="20" y="24" width="216" height="140" rx="6" fill="#0D7B59"/>
+            <rect x="36" y="40" width="44" height="6" rx="3" fill="#7fd3b6"/>
+            <text x="36" y="96" font-family="Inter Tight,Arial" font-size="15" font-weight="700" fill="#fff">Q4 Market</text>
+            <text x="36" y="116" font-family="Inter Tight,Arial" font-size="15" font-weight="700" fill="#fff">Outlook</text>
+            <text x="36" y="146" font-family="Inter Tight,Arial" font-size="9" fill="#bfe6d6">Firetrail · June 2026</text>
+            <!-- slide 2: big stat -->
+            <rect x="252" y="24" width="216" height="140" rx="6" fill="#fff" stroke="#d6dcda"/>
+            <text x="268" y="48" font-family="Inter Tight,Arial" font-size="8.5" fill="#1b2a4a" letter-spacing="1">EARNINGS GROWTH</text>
+            <text x="268" y="104" font-family="Inter Tight,Arial" font-size="40" font-weight="800" fill="#0D7B59">+18%</text>
+            <text x="268" y="128" font-family="Inter Tight,Arial" font-size="9.5" fill="#5d5d5d">year on year, ahead of consensus</text>
+            <rect x="268" y="140" width="120" height="4" rx="2" fill="#0D7B59"/>
+            <!-- slide 3: chart -->
+            <rect x="484" y="24" width="216" height="140" rx="6" fill="#fff" stroke="#d6dcda"/>
+            <text x="500" y="48" font-family="Inter Tight,Arial" font-size="8.5" fill="#1b2a4a" letter-spacing="1">REVENUE BY SEGMENT</text>
+            <g>
+              <rect x="500" y="92" width="26" height="56" fill="#0D7B59"/><rect x="534" y="76" width="26" height="72" fill="#0D7B59"/><rect x="568" y="104" width="26" height="44" fill="#1b2a4a"/><rect x="602" y="64" width="26" height="84" fill="#0D7B59"/><rect x="636" y="118" width="26" height="30" fill="#c44"/>
+              <line x1="500" y1="148" x2="678" y2="148" stroke="#d6dcda"/>
+            </g>
+            <g font-family="Inter Tight,Arial" font-size="8.5" fill="#8a8a8a" text-anchor="middle"><text x="220" y="184">cover</text><text x="452" y="184">big stat</text><text x="684" y="184">native chart</text></g>
+          </svg>
+        </div>
+      </div>
+      <div class="slide">
+        <span class="stag">Result</span>
+        <h4>Blank page to on-brand deck in minutes</h4>
+        <div class="impact">
+          <div class="stat"><div class="big">editable</div><div class="lab">real .pptx with native charts the team can keep editing, not flat images</div></div>
+          <div class="stat"><div class="big">on-brand</div><div class="lab">colours, fonts and logos lifted straight from the client's own template</div></div>
+          <div class="stat"><div class="big">plain English</div><div class="lab">refine any slide with a sentence of feedback, live preview each time</div></div>
+          <div class="stat"><div class="big">notes to deck</div><div class="lab">structured generation removes the manual layout and styling pass</div></div>
+        </div>
+      </div>
     </div>
+    <button class="car-btn car-prev" aria-label="Previous">&lsaquo;</button>
+    <button class="car-btn car-next" aria-label="Next">&rsaquo;</button>
+    <div class="dots"></div>
   </div>
+</div>
 
-  <!-- 5. RETAIL DECK -->
-  <div class="proj">
-    <p class="kicker">Finance and retail</p>
-    <h3>Sales-deck generator</h3>
-    <p class="role-line"><b>Built with</b> Python, FastAPI, python-pptx, LibreOffice headless, Claude, Railway</p>
-    <p>A tool that converts raw market notes into a real, editable PowerPoint deck. It extracts a brand kit from a template, builds native editable charts rather than flat images, and supports slide-by-slide refinement through plain-English feedback, with live preview and PDF export.</p>
-    <div class="figure">
-      <svg viewBox="0 0 680 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Notes become structured slides built into an editable PowerPoint deck">
-        <rect width="680" height="250" fill="#ffffff"/>
-        <g font-family="Arial" font-size="12.5">
-          <rect x="22" y="64" width="118" height="74" rx="8" fill="#faf9f6" stroke="#d8d6d0"/><text x="81" y="92" text-anchor="middle" fill="#1a1a1a">Raw notes</text>
-          <rect x="40" y="104" width="82" height="6" rx="2" fill="#e4e2dd"/><rect x="40" y="116" width="60" height="6" rx="2" fill="#e4e2dd"/>
-          <rect x="176" y="64" width="128" height="74" rx="8" fill="#13524b"/><text x="240" y="96" text-anchor="middle" fill="#fff">Claude</text><text x="240" y="114" text-anchor="middle" font-size="10" fill="#cfe0db">structured slides</text>
-          <rect x="340" y="64" width="128" height="74" rx="8" fill="#e7efed"/><text x="404" y="96" text-anchor="middle" fill="#13524b">python-pptx</text><text x="404" y="114" text-anchor="middle" font-size="10" fill="#5d5d5d">native charts</text>
-        </g>
-        <g stroke="#13524b" stroke-width="2" fill="none" marker-end="url(#ar3)">
-          <path d="M140 101 H 176"/><path d="M304 101 H 340"/><path d="M468 101 H 504"/>
-        </g>
-        <defs><marker id="ar3" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#13524b"/></marker></defs>
-        <!-- editable deck -->
-        <rect x="508" y="48" width="150" height="106" rx="8" fill="#ffffff" stroke="#d8d6d0"/>
-        <rect x="508" y="48" width="150" height="22" rx="8" fill="#13524b"/><text x="520" y="63" font-family="Arial" font-size="10" fill="#fff">Editable .pptx</text>
-        <rect x="522" y="84" width="60" height="7" rx="2" fill="#e4e2dd"/>
-        <!-- mini bar chart -->
-        <rect x="522" y="104" width="10" height="30" fill="#2e7d72"/><rect x="538" y="114" width="10" height="20" fill="#2e7d72"/><rect x="554" y="98" width="10" height="36" fill="#13524b"/>
-        <rect x="600" y="98" width="44" height="36" rx="3" fill="#e7efed"/><text x="622" y="121" font-family="Arial" font-size="11" font-weight="bold" fill="#13524b" text-anchor="middle">+18%</text>
-        <text x="583" y="176" font-family="Arial" font-size="10" fill="#8a8a8a" text-anchor="middle">live preview and PDF export</text>
-      </svg>
-      <div class="cap">Notes become a real editable deck with native charts, refined slide by slide in plain English.</div>
+<!-- ============ 5. CREATIVE APP ============ -->
+<div class="proj">
+  <p class="kicker">Creative, Subject:RAW</p>
+  <h3>Automated graphics and carousel engine</h3>
+  <p class="role-line">Next.js, Claude (vision + structured brief), gpt-image-2, sharp, brand-token system</p>
+  <p class="lead2">Turns a plain-language brief and a brand token set into on-brand social graphics. A carousel locks visual identity from the first slide, and every image is checked against the platform safe zone and auto-revised if it breaks.</p>
+  <div class="carousel" data-carousel>
+    <div class="track">
+      <div class="slide">
+        <span class="stag">How it works</span>
+        <h4>Brief to brand-locked images with a compliance loop</h4>
+        <div class="fig">
+          <svg viewBox="0 0 720 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Creative app pipeline">
+            <rect width="720" height="250" fill="#fff"/>
+            <g font-family="Inter Tight,Arial" font-size="12">
+              <rect x="20" y="58" width="128" height="76" rx="8" fill="#faf9f6" stroke="#d8d6d0"/><text x="84" y="84" text-anchor="middle" fill="#1a1a1a">Brief</text><text x="84" y="102" text-anchor="middle" font-size="9.5" fill="#8a8a8a">+ brand tokens</text><text x="84" y="118" text-anchor="middle" font-size="9.5" fill="#8a8a8a">+ references</text>
+              <rect x="184" y="58" width="128" height="76" rx="8" fill="#13524b"/><text x="248" y="90" text-anchor="middle" fill="#fff">Claude</text><text x="248" y="108" text-anchor="middle" font-size="9.5" fill="#cfe0db">structured brief</text>
+              <rect x="348" y="58" width="128" height="76" rx="8" fill="#9C5236"/><text x="412" y="90" text-anchor="middle" fill="#fff">gpt-image-2</text><text x="412" y="108" text-anchor="middle" font-size="9.5" fill="#f3dcc9">carousel locked</text>
+              <rect x="512" y="58" width="128" height="76" rx="8" fill="#e7efed"/><text x="576" y="84" text-anchor="middle" fill="#13524b">Safe-zone</text><text x="576" y="102" text-anchor="middle" font-size="9.5" fill="#5d5d5d">Claude vision</text><text x="576" y="118" text-anchor="middle" font-size="9.5" fill="#5d5d5d">check</text>
+            </g>
+            <g stroke="#13524b" stroke-width="2" fill="none" marker-end="url(#cc)"><path d="M148 96 H 184"/><path d="M312 96 H 348"/><path d="M476 96 H 512"/></g>
+            <defs><marker id="cc" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#13524b"/></marker></defs>
+            <path d="M576 134 V 168 H 412 V 134" stroke="#c08a2d" stroke-width="2" fill="none" marker-end="url(#cc2)"/>
+            <defs><marker id="cc2" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#c08a2d"/></marker></defs>
+            <text x="494" y="162" font-family="Inter Tight,Arial" font-size="9.5" fill="#c08a2d" text-anchor="middle">auto-revise up to 2&times;</text>
+            <path d="M640 96 H 676" stroke="#13524b" stroke-width="2" fill="none" marker-end="url(#cc)"/>
+            <text x="672" y="84" font-family="Inter Tight,Arial" font-size="10" fill="#13524b" text-anchor="end">deliver</text>
+          </svg>
+        </div>
+      </div>
+      <div class="slide">
+        <span class="stag">What it controls</span>
+        <h4>Brand tokens in, consistent assets out</h4>
+        <div class="grp"><div class="gh">Brand token set</div>
+          <div class="vrow"><span class="k">Colours</span><span class="v">named + hex</span></div>
+          <div class="vrow"><span class="k">Fonts</span><span class="v">role + typeface</span></div>
+          <div class="vrow"><span class="k">Notes</span><span class="v">tone + usage rules</span></div>
+        </div>
+        <div class="grp"><div class="gh">Generation controls</div>
+          <div class="vrow"><span class="k">Aspect ratios</span><span class="v">1:1, 4:5, 9:16, 16:9 ...</span></div>
+          <div class="vrow"><span class="k">Carousel identity</span><span class="v">slide 1 seeds the rest</span></div>
+          <div class="vrow"><span class="k">Safe zone</span><span class="v">~10% margins enforced</span></div>
+          <div class="vrow"><span class="k">Variations</span><span class="v">batch, 4-worker queue</span></div>
+        </div>
+      </div>
+      <div class="slide">
+        <span class="stag">Example output</span>
+        <h4>A brand-locked carousel with the safe-zone check</h4>
+        <div class="fig">
+          <svg viewBox="0 0 720 270" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Creative carousel mockup">
+            <rect width="720" height="270" fill="#F4ECDC"/>
+            <!-- slide 1 -->
+            <rect x="24" y="30" width="150" height="200" rx="8" fill="#264653"/>
+            <rect x="40" y="46" width="118" height="120" rx="4" fill="#33586a"/>
+            <text x="40" y="196" font-family="Fraunces,Georgia,serif" font-size="15" fill="#E5C079">The hook</text>
+            <text x="40" y="216" font-family="Inter Tight,Arial" font-size="9" fill="#cfd8dc">swipe to see more</text>
+            <!-- slide 2 -->
+            <rect x="190" y="30" width="150" height="200" rx="8" fill="#9C5236"/>
+            <rect x="206" y="46" width="118" height="120" rx="4" fill="#b06a48"/>
+            <text x="206" y="196" font-family="Fraunces,Georgia,serif" font-size="15" fill="#F4ECDC">Point one</text>
+            <text x="206" y="216" font-family="Inter Tight,Arial" font-size="9" fill="#f3dcc9">consistent type + grid</text>
+            <!-- slide 3 -->
+            <rect x="356" y="30" width="150" height="200" rx="8" fill="#E5C079"/>
+            <rect x="372" y="46" width="118" height="120" rx="4" fill="#d8ad5f"/>
+            <text x="372" y="196" font-family="Fraunces,Georgia,serif" font-size="15" fill="#264653">Point two</text>
+            <text x="372" y="216" font-family="Inter Tight,Arial" font-size="9" fill="#5b4a2a">same logo lock-up</text>
+            <!-- safe zone overlay -->
+            <rect x="540" y="30" width="150" height="200" rx="8" fill="#fff" stroke="#d8d6d0"/>
+            <rect x="555" y="45" width="120" height="170" rx="4" fill="none" stroke="#c0392b" stroke-width="1.4" stroke-dasharray="5 4"/>
+            <text x="600" y="120" font-family="Inter Tight,Arial" font-size="10" fill="#1a1a1a" text-anchor="middle">safe zone</text>
+            <text x="600" y="138" font-family="Inter Tight,Arial" font-size="9" fill="#8a8a8a" text-anchor="middle">text + logo inside</text>
+            <text x="615" y="252" font-family="Inter Tight,Arial" font-size="9" fill="#8a8a8a" text-anchor="middle">compliance overlay</text>
+            <text x="245" y="252" font-family="Inter Tight,Arial" font-size="9" fill="#8a7a55" text-anchor="middle">one identity across the set</text>
+          </svg>
+        </div>
+      </div>
+      <div class="slide">
+        <span class="stag">Result</span>
+        <h4>A studio's volume from a small team</h4>
+        <div class="impact">
+          <div class="stat"><div class="big">brief to spec</div><div class="lab">plain language becomes a structured creative brief automatically</div></div>
+          <div class="stat"><div class="big">one identity</div><div class="lab">every slide in a carousel holds the same type, grid and logo lock-up</div></div>
+          <div class="stat"><div class="big">auto-compliant</div><div class="lab">safe-zone breaches detected and fixed before delivery, no manual checking</div></div>
+          <div class="stat"><div class="big">batch variations</div><div class="lab">many on-brand options generated at once for selection and testing</div></div>
+        </div>
+      </div>
     </div>
+    <button class="car-btn car-prev" aria-label="Previous">&lsaquo;</button>
+    <button class="car-btn car-next" aria-label="Next">&rsaquo;</button>
+    <div class="dots"></div>
   </div>
+</div>
 
-  <section>
+<section>
     <h2 class="sec">More</h2>
     <p class="actions"><a href="index.html">View resume</a><a href="cover.html">Cover letter</a></p>
   </section>
@@ -248,5 +528,18 @@
 <footer><div class="wrap">
   Uday Barooah &middot; <a href="mailto:uday.barooahsc@gmail.com">uday.barooahsc@gmail.com</a>
 </div></footer>
+
+<script>
+document.querySelectorAll('[data-carousel]').forEach(function(c){
+  var track=c.querySelector('.track'), slides=track.children, dots=c.querySelector('.dots');
+  for(var i=0;i<slides.length;i++){var d=document.createElement('button');d.className='dot'+(i===0?' on':'');d.dataset.i=i;dots.appendChild(d);}
+  function idx(){return Math.round(track.scrollLeft/track.clientWidth);}
+  function sync(){var n=idx();dots.querySelectorAll('.dot').forEach(function(d,j){d.classList.toggle('on',j===n);});}
+  c.querySelector('.car-next').onclick=function(){track.scrollBy({left:track.clientWidth,behavior:'smooth'});};
+  c.querySelector('.car-prev').onclick=function(){track.scrollBy({left:-track.clientWidth,behavior:'smooth'});};
+  dots.querySelectorAll('.dot').forEach(function(d){d.onclick=function(){track.scrollTo({left:track.clientWidth*(+d.dataset.i),behavior:'smooth'});};});
+  track.addEventListener('scroll',function(){window.requestAnimationFrame(sync);});
+});
+</script>
 </body>
 </html>
