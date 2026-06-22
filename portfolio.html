@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Uday Barooah, Portfolio</title>
 <meta name="description" content="Deidentified portfolio of agentic workflows and dashboards built by Uday Barooah across professional sport, e-commerce and marketing.">
-<link rel="stylesheet" href="assets/css/style.css?v=2">
+<link rel="stylesheet" href="assets/css/style.css?v=3">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter+Tight:wght@400;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
@@ -16,25 +16,22 @@
   <span class="links">
     <a href="index.html">Resume</a>
     <a href="portfolio.html">Portfolio</a>
-    <a href="cover.html">Cover letter</a>
   </span>
 </div></nav>
 
 <header class="masthead"><div class="wrap">
   <h1>Portfolio</h1>
   <p class="role">Agentic Workflows &amp; Dashboards</p>
-  <p class="lead">Each system below is a short carousel: how the pipeline works, the variables it tracks, an example of the real output, and the result. Swipe or use the arrows. Every figure is deidentified; the logic, variables and branding are real.</p>
 </div></header>
 
 <div class="wrap">
-<div class="note">Everything here is deidentified. Client and club names, athlete data and sensitive figures are replaced with representative content. Each example output is rendered in that system's real brand to show the range of work. Live walkthroughs are available on request.</div>
 
 <!-- ============ 1. SPORT ============ -->
 <div class="proj">
   <p class="kicker">Professional sport</p>
   <h3>Athlete monitoring and live game suite</h3>
-  <p class="role-line">R, Shiny, SQLite, Catapult, StatsPerform and live tracking APIs, automated report generation, Supabase</p>
-  <p class="lead2">Three connected tools for an elite rugby league program: a GPS load dashboard, a gait-asymmetry and mechanical-work monitor, and a live in-game interchange and ball-in-play tracker that produces an automatic post-game report.</p>
+  <p class="role-line">R, Shiny, SQLite, Catapult, Teamworks, VALD, StatsPerform and live tracking APIs, automated report generation, Supabase</p>
+  <p class="lead2">Three connected tools for an elite rugby league program: a GPS load dashboard, a gait-asymmetry and mechanical-work monitor, and a live in-game interchange and ball-in-play tracker. They feed automated GPS, screening and post-game reports.</p>
   <div class="carousel" data-carousel>
     <div class="track">
       <div class="slide">
@@ -45,7 +42,7 @@
             <rect width="720" height="300" fill="#fff"/>
             <text x="20" y="24" font-family="Inter Tight,Arial" font-size="11" font-weight="bold" letter-spacing="1" fill="#5d5d5d">INPUTS</text>
             <g font-family="Inter Tight,Arial" font-size="11.5" fill="#1a1a1a">
-              <rect x="20" y="36" width="150" height="32" rx="7" fill="#faf9f6" stroke="#d8d6d0"/><text x="32" y="56">Catapult GPS</text>
+              <rect x="20" y="36" width="150" height="32" rx="7" fill="#faf9f6" stroke="#d8d6d0"/><text x="32" y="56">Catapult / Teamworks</text>
               <rect x="20" y="76" width="150" height="32" rx="7" fill="#faf9f6" stroke="#d8d6d0"/><text x="32" y="96">Force plate / VALD</text>
               <rect x="20" y="116" width="150" height="32" rx="7" fill="#faf9f6" stroke="#d8d6d0"/><text x="32" y="136">StatsPerform / LiveXY</text>
               <rect x="20" y="156" width="150" height="32" rx="7" fill="#faf9f6" stroke="#d8d6d0"/><text x="32" y="176">Wellness / screening</text>
@@ -60,76 +57,26 @@
               <rect x="396" y="152" width="150" height="36" rx="7" fill="#faf9f6" stroke="#d8d6d0"/><text x="408" y="174" fill="#1a1a1a">Live game tracker</text>
             </g>
             <g stroke="#9bbdb6" stroke-width="1.6" fill="none" marker-end="url(#sa)"><path d="M546 60 H 580 V 104"/><path d="M546 110 H 580"/><path d="M546 170 H 580 V 116"/></g>
-            <rect x="580" y="92" width="124" height="40" rx="8" fill="#13524b"/><text x="642" y="110" font-family="Inter Tight,Arial" font-size="11.5" font-weight="bold" fill="#fff" text-anchor="middle">Auto reports</text><text x="642" y="125" font-family="Inter Tight,Arial" font-size="9.5" fill="#cfe0db" text-anchor="middle">staff + AI weekly</text>
+            <rect x="580" y="92" width="124" height="40" rx="8" fill="#13524b"/><text x="642" y="110" font-family="Inter Tight,Arial" font-size="11.5" font-weight="bold" fill="#fff" text-anchor="middle">Auto reports</text><text x="642" y="125" font-family="Inter Tight,Arial" font-size="9" fill="#cfe0db" text-anchor="middle">GPS · screening · game</text>
           </svg>
-        </div>
-      </div>
-      <div class="slide">
-        <span class="stag">What it tracks</span>
-        <h4>The exact metrics, defined the way the club spreadsheet defines them</h4>
-        <div class="grp"><div class="gh">GPS load</div>
-          <div class="vrow"><span class="k">Speed exposure</span><span class="v">max vel &divide; profile max</span></div>
-          <div class="vrow"><span class="k">High-speed running</span><span class="v">V5+ / V7+ distance</span></div>
-          <div class="vrow"><span class="k">Work rate</span><span class="v">metres / minute</span></div>
-          <div class="vrow"><span class="k">Accel-decel efforts</span><span class="v">AccDec count</span></div>
-        </div>
-        <div class="grp"><div class="gh">Gait &amp; mechanical (ADI)</div>
-          <div class="vrow"><span class="k">Asymmetry flag</span><span class="v">&ge; 1.5pp vs norm, last 3 sessions</span></div>
-          <div class="vrow"><span class="k">Relative speed bands</span><span class="v">40&ndash;90% of player max</span></div>
-          <div class="vrow"><span class="k">Drill cost</span><span class="v">% diff vs player history</span></div>
-        </div>
-        <div class="grp"><div class="gh">Live game</div>
-          <div class="vrow"><span class="k">Ball-in-play</span><span class="v">% of game time</span></div>
-          <div class="vrow"><span class="k">Work-rest ratio</span><span class="v">rest &divide; work</span></div>
-          <div class="vrow"><span class="k">Interchanges</span><span class="v">8-limit, HIA free</span></div>
         </div>
       </div>
       <div class="slide">
         <span class="stag">Example output</span>
-        <h4>Automated post-game report, in club colours</h4>
+        <h4>A real post-game report from the live tracker</h4>
         <div class="fig">
-          <svg viewBox="0 0 720 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Post-game report mockup">
-            <rect width="720" height="320" fill="#141414"/>
-            <rect x="0" y="0" width="720" height="48" fill="#0a0a0a"/>
-            <circle cx="30" cy="24" r="11" fill="#1a1a1a" stroke="#e8b84b" stroke-width="1.5"/>
-            <text x="50" y="22" font-family="Inter Tight,Arial" font-size="13" font-weight="700" fill="#fff">POST-GAME REPORT</text>
-            <text x="50" y="37" font-family="Inter Tight,Arial" font-size="10" fill="#8a8a8a">Round 16 · NRL · vs opponent</text>
-            <text x="700" y="30" font-family="Inter Tight,Arial" font-size="11" fill="#e8b84b" text-anchor="end">WIN 24&ndash;18</text>
-            <!-- BIP cards -->
-            <g font-family="Inter Tight,Arial">
-              <rect x="20" y="66" width="150" height="70" rx="8" fill="#1e1e1e"/><text x="34" y="88" font-size="10" fill="#8a8a8a">BALL IN PLAY</text><text x="34" y="120" font-family="JetBrains Mono,monospace" font-size="26" font-weight="700" fill="#e8b84b">57%</text>
-              <rect x="180" y="66" width="150" height="70" rx="8" fill="#1e1e1e"/><text x="194" y="88" font-size="10" fill="#8a8a8a">WORK-REST</text><text x="194" y="120" font-family="JetBrains Mono,monospace" font-size="26" font-weight="700" fill="#fff">1.3:1</text>
-              <rect x="340" y="66" width="150" height="70" rx="8" fill="#1e1e1e"/><text x="354" y="88" font-size="10" fill="#8a8a8a">H1 / H2 BIP</text><text x="354" y="120" font-family="JetBrains Mono,monospace" font-size="22" font-weight="700" fill="#fff">61 / 53</text>
-              <rect x="500" y="66" width="200" height="70" rx="8" fill="#1e1e1e"/><text x="514" y="88" font-size="10" fill="#8a8a8a">CYCLES &ge; 3 MIN</text><text x="514" y="120" font-family="JetBrains Mono,monospace" font-size="26" font-weight="700" fill="#fff">4</text>
-            </g>
-            <!-- period bars -->
-            <text x="20" y="162" font-family="Inter Tight,Arial" font-size="10" fill="#8a8a8a">BIP BY 20-MIN PERIOD vs SEASON AVG</text>
-            <g font-family="JetBrains Mono,monospace" font-size="9" fill="#cfcfcf">
-              <text x="20" y="184">0-20</text><rect x="64" y="176" width="180" height="9" rx="2" fill="#333"/><rect x="64" y="176" width="124" height="9" rx="2" fill="#e8b84b"/><text x="252" y="184">62%</text>
-              <text x="20" y="202">20-40</text><rect x="64" y="194" width="180" height="9" rx="2" fill="#333"/><rect x="64" y="194" width="108" height="9" rx="2" fill="#e8b84b"/><text x="252" y="202">59%</text>
-              <text x="20" y="220">40-60</text><rect x="64" y="212" width="180" height="9" rx="2" fill="#333"/><rect x="64" y="212" width="96" height="9" rx="2" fill="#e8b84b"/><text x="252" y="220">54%</text>
-              <text x="20" y="238">60-80</text><rect x="64" y="230" width="180" height="9" rx="2" fill="#333"/><rect x="64" y="230" width="86" height="9" rx="2" fill="#e8b84b"/><text x="252" y="238">51%</text>
-            </g>
-            <!-- player minutes -->
-            <text x="300" y="162" font-family="Inter Tight,Arial" font-size="10" fill="#8a8a8a">PLAYER MINUTES vs SEASON AVG</text>
-            <g font-family="JetBrains Mono,monospace" font-size="10" fill="#cfcfcf">
-              <text x="300" y="184">#7 Halfback</text><text x="560" y="184">78:20</text><text x="700" y="184" text-anchor="end" fill="#3ea76f">+4</text>
-              <text x="300" y="204">#9 Hooker</text><text x="560" y="204">62:10</text><text x="700" y="204" text-anchor="end" fill="#3ea76f">+2</text>
-              <text x="300" y="224">#13 Lock</text><text x="560" y="224">54:40</text><text x="700" y="224" text-anchor="end" fill="#d76b5e">-6</text>
-              <text x="300" y="244">#8 Prop</text><text x="560" y="244">41:05</text><text x="700" y="244" text-anchor="end" fill="#8a8a8a">0</text>
-            </g>
-            <rect x="300" y="262" width="400" height="40" rx="7" fill="#1e1e1e"/><text x="314" y="280" font-family="Inter Tight,Arial" font-size="10" fill="#8a8a8a">GAIT ASYMMETRY</text><text x="314" y="295" font-family="Inter Tight,Arial" font-size="11" fill="#e8b84b">1 flag: #13 decel +2.1pp right over last 3 sessions</text>
-          </svg>
+          <img src="assets/img/sport-report.png" alt="Post-game interchange and ball-in-play report" loading="lazy">
         </div>
+        <div class="cap">Real output, deidentified. Ball-in-play, work-rest ratio, period breakdown vs season average and cycle analysis, generated automatically the moment the game ends. The suite also produces GPS load and screening reports.</div>
       </div>
       <div class="slide">
         <span class="stag">Result</span>
-        <h4>Hours of manual reporting removed each week</h4>
+        <h4>From raw feed to decision in seconds, not hours</h4>
         <div class="impact">
-          <div class="stat"><div class="big">~30 min</div><div class="lab">saved per GPS session, raw Catapult export to a finished report</div></div>
-          <div class="stat"><div class="big">~45 min</div><div class="lab">saved per game, the live tracker replaces a manual game log</div></div>
-          <div class="stat"><div class="big">auto flags</div><div class="lab">gait asymmetry and overload surfaced against each player's own baseline</div></div>
-          <div class="stat"><div class="big">one shared view</div><div class="lab">performance, medical and coaching staff read from the same numbers</div></div>
+          <div class="stat"><div class="big">~30 min &rarr; instant</div><div class="lab">per GPS session, raw Catapult export to a finished report</div></div>
+          <div class="stat"><div class="big">live, not next day</div><div class="lab">the post-game report lands the moment full-time blows, not the morning after</div></div>
+          <div class="stat"><div class="big">queryable in plain English</div><div class="lab">GPS, screening, wellness and game data integrated into one source staff can ask questions of</div></div>
+          <div class="stat"><div class="big">flags before fatigue</div><div class="lab">gait asymmetry and overload surfaced against each player's own baseline</div></div>
         </div>
       </div>
     </div>
@@ -228,11 +175,11 @@
       </div>
       <div class="slide">
         <span class="stag">Result</span>
-        <h4>Problems caught before they cascade</h4>
+        <h4>Real decisions, real savings</h4>
         <div class="impact">
+          <div class="stat"><div class="big">£100k+ saved</div><div class="lab">provided the analysis behind moving third-party logistics to China, cutting shipping cost</div></div>
+          <div class="stat"><div class="big">88% &rarr; 97%</div><div class="lab">on-time order fulfilment against SOP, lifted by the Slack alerting system</div></div>
           <div class="stat"><div class="big">every 10 min</div><div class="lab">full operational sweep, no manual checking of 3PL, Shopify and inbox</div></div>
-          <div class="stat"><div class="big">UK &rarr; UK + China</div><div class="lab">3PL split I migrated, lower shipping cost and faster transit and returns</div></div>
-          <div class="stat"><div class="big">100% verified</div><div class="lab">every number in the morning briefing is checked against source before it posts</div></div>
           <div class="stat"><div class="big">before the customer</div><div class="lab">stuck parcels, oversell and stockouts surface before a support ticket lands</div></div>
         </div>
       </div>
@@ -246,9 +193,9 @@
 <!-- ============ 3. GROWTH OS ============ -->
 <div class="proj">
   <p class="kicker">Marketing, Subject:RAW</p>
-  <h3>Growth OS demand-report engine</h3>
+  <h3>Marketing Visibility Audit: SEO + Meta Ads</h3>
   <p class="role-line">Python, FastAPI, Postgres, Jinja / HTMX, DataForSEO + Google Places + Meta Ad Library, Claude, Railway</p>
-  <p class="lead2">Give it a clinic website, postcode and segment and it returns a credible one-page report of the local patient demand the clinic is missing, built from real search and competitor data.</p>
+  <p class="lead2">Give it a website, postcode and segment and it returns a credible one-page report of the local demand a business is missing, built from real search, SERP and Meta Ads data.</p>
   <div class="carousel" data-carousel>
     <div class="track">
       <div class="slide">
@@ -278,7 +225,7 @@
       </div>
       <div class="slide">
         <span class="stag">What it calculates</span>
-        <h4>A transparent demand funnel, every coefficient shown</h4>
+        <h4>Transforming missed search volume into missed value</h4>
         <div class="fig">
           <svg viewBox="0 0 720 290" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Demand funnel formula">
             <rect width="720" height="290" fill="#fff"/>
@@ -345,7 +292,7 @@
   <p class="kicker">Finance and retail</p>
   <h3>Sales-deck generator</h3>
   <p class="role-line">Python, FastAPI, python-pptx, LibreOffice headless, Claude (forced structured output), Railway</p>
-  <p class="lead2">Turns raw market notes into a real, editable PowerPoint deck. It extracts the brand kit from a template, writes native editable charts rather than flat images, and supports slide-by-slide refinement in plain English.</p>
+  <p class="lead2">Turns raw market notes into a real, editable PowerPoint deck. It extracts the brand kit from a template, writes native editable charts rather than flat images, and supports slide-by-slide refinement in plain English. It also has a feedback loop: the more completed decks you upload, the sharper it gets at matching the house style on the next one.</p>
   <div class="carousel" data-carousel>
     <div class="track">
       <div class="slide">
@@ -362,7 +309,8 @@
             <g stroke="#13524b" stroke-width="2" fill="none" marker-end="url(#dd)"><path d="M140 98 H 176"/><path d="M306 98 H 342"/><path d="M472 98 H 508"/></g>
             <defs><marker id="dd" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#13524b"/></marker></defs>
             <rect x="508" y="56" width="192" height="84" rx="8" fill="#faf9f6" stroke="#d8d6d0"/><text x="524" y="80" font-family="Inter Tight,Arial" font-size="12" font-weight="700" fill="#13524b">Editable .pptx</text><text x="524" y="98" font-family="Inter Tight,Arial" font-size="10" fill="#8a8a8a">native charts, not images</text><text x="524" y="120" font-family="Inter Tight,Arial" font-size="10" fill="#8a8a8a">live preview + PDF export</text>
-            <text x="80" y="176" font-family="Inter Tight,Arial" font-size="10" fill="#8a8a8a" text-anchor="middle">layout types: title · big_stat · chart · flow · two_column · quote</text>
+            <path d="M508 140 C 508 200, 241 200, 241 140" stroke="#c08a2d" stroke-width="1.6" fill="none" marker-end="url(#dd)" stroke-dasharray="5 4"/>
+            <text x="375" y="196" font-family="Inter Tight,Arial" font-size="10" fill="#c08a2d" text-anchor="middle">completed decks feed back and sharpen the next one</text>
           </svg>
         </div>
       </div>
@@ -375,14 +323,14 @@
           <div class="vrow"><span class="k">Logos</span><span class="v">extracted from media</span></div>
         </div>
         <div class="grp"><div class="gh">Slide schema (Claude structured output)</div>
-          <div class="vrow"><span class="k">Layout types</span><span class="v">10 (title, big_stat, chart, flow...)</span></div>
+          <div class="vrow"><span class="k">Layout types</span><span class="v">10 ready-made layouts</span></div>
           <div class="vrow"><span class="k">Chart types</span><span class="v">bar, column, line, pie, area</span></div>
           <div class="vrow"><span class="k">Per slide</span><span class="v">kicker, takeaway, strapline, notes</span></div>
         </div>
       </div>
       <div class="slide">
         <span class="stag">Example output</span>
-        <h4>A finished deck, in the client's brand (Firetrail shown)</h4>
+        <h4>A finished deck, in the client's brand</h4>
         <div class="fig">
           <svg viewBox="0 0 720 270" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Deck filmstrip mockup">
             <rect width="720" height="270" fill="#eef1f0"/>
@@ -391,7 +339,7 @@
             <rect x="36" y="40" width="44" height="6" rx="3" fill="#7fd3b6"/>
             <text x="36" y="96" font-family="Inter Tight,Arial" font-size="15" font-weight="700" fill="#fff">Q4 Market</text>
             <text x="36" y="116" font-family="Inter Tight,Arial" font-size="15" font-weight="700" fill="#fff">Outlook</text>
-            <text x="36" y="146" font-family="Inter Tight,Arial" font-size="9" fill="#bfe6d6">Firetrail · June 2026</text>
+            <text x="36" y="146" font-family="Inter Tight,Arial" font-size="9" fill="#bfe6d6">Investment Banking Client</text>
             <!-- slide 2: big stat -->
             <rect x="252" y="24" width="216" height="140" rx="6" fill="#fff" stroke="#d6dcda"/>
             <text x="268" y="48" font-family="Inter Tight,Arial" font-size="8.5" fill="#1b2a4a" letter-spacing="1">EARNINGS GROWTH</text>
@@ -411,12 +359,12 @@
       </div>
       <div class="slide">
         <span class="stag">Result</span>
-        <h4>Blank page to on-brand deck in minutes</h4>
+        <h4>Hours back, every week</h4>
         <div class="impact">
-          <div class="stat"><div class="big">editable</div><div class="lab">real .pptx with native charts the team can keep editing, not flat images</div></div>
+          <div class="stat"><div class="big">3 hrs / week</div><div class="lab">cut from PPTX work for an investment banking client, across 5 decks a week</div></div>
+          <div class="stat"><div class="big">editable</div><div class="lab">real .pptx with native charts the team keeps editing, not flat images</div></div>
           <div class="stat"><div class="big">on-brand</div><div class="lab">colours, fonts and logos lifted straight from the client's own template</div></div>
-          <div class="stat"><div class="big">plain English</div><div class="lab">refine any slide with a sentence of feedback, live preview each time</div></div>
-          <div class="stat"><div class="big">notes to deck</div><div class="lab">structured generation removes the manual layout and styling pass</div></div>
+          <div class="stat"><div class="big">learns the style</div><div class="lab">each uploaded deck sharpens how it matches the house style next time</div></div>
         </div>
       </div>
     </div>
@@ -430,8 +378,8 @@
 <div class="proj">
   <p class="kicker">Creative, Subject:RAW</p>
   <h3>Automated graphics and carousel engine</h3>
-  <p class="role-line">Next.js, Claude (vision + structured brief), gpt-image-2, sharp, brand-token system</p>
-  <p class="lead2">Turns a plain-language brief and a brand token set into on-brand social graphics. A carousel locks visual identity from the first slide, and every image is checked against the platform safe zone and auto-revised if it breaks.</p>
+  <p class="role-line">Next.js, Claude (vision + structured brief), gpt-image-2, nano-banana, sharp, brand-token system, Instagram publishing</p>
+  <p class="lead2">Turns a plain-language brief and a brand token set into on-brand social graphics. It digests inspiration images, locks visual identity across a carousel from the first slide, edits and resizes existing graphics with nano-banana, and checks every image against the platform safe zone. Revisions are unlimited in a chat module, and finished posts go straight to Instagram.</p>
   <div class="carousel" data-carousel>
     <div class="track">
       <div class="slide">
@@ -464,11 +412,13 @@
           <div class="vrow"><span class="k">Fonts</span><span class="v">role + typeface</span></div>
           <div class="vrow"><span class="k">Notes</span><span class="v">tone + usage rules</span></div>
         </div>
-        <div class="grp"><div class="gh">Generation controls</div>
+        <div class="grp"><div class="gh">Generation and delivery</div>
           <div class="vrow"><span class="k">Aspect ratios</span><span class="v">1:1, 4:5, 9:16, 16:9 ...</span></div>
           <div class="vrow"><span class="k">Carousel identity</span><span class="v">slide 1 seeds the rest</span></div>
-          <div class="vrow"><span class="k">Safe zone</span><span class="v">~10% margins enforced</span></div>
-          <div class="vrow"><span class="k">Variations</span><span class="v">batch, 4-worker queue</span></div>
+          <div class="vrow"><span class="k">Edit + resize</span><span class="v">nano-banana on existing graphics</span></div>
+          <div class="vrow"><span class="k">Inspiration</span><span class="v">digests reference images</span></div>
+          <div class="vrow"><span class="k">Revisions</span><span class="v">unlimited, in chat</span></div>
+          <div class="vrow"><span class="k">Publish</span><span class="v">direct to Instagram</span></div>
         </div>
       </div>
       <div class="slide">
@@ -504,12 +454,12 @@
       </div>
       <div class="slide">
         <span class="stag">Result</span>
-        <h4>A studio's volume from a small team</h4>
+        <h4>Brief to post, in minutes</h4>
         <div class="impact">
-          <div class="stat"><div class="big">brief to spec</div><div class="lab">plain language becomes a structured creative brief automatically</div></div>
+          <div class="stat"><div class="big">5 minutes</div><div class="lab">from brief to a finished, on-brand graphic</div></div>
+          <div class="stat"><div class="big">15 minutes</div><div class="lab">from brief to live on Meta, posted straight from the tool</div></div>
           <div class="stat"><div class="big">one identity</div><div class="lab">every slide in a carousel holds the same type, grid and logo lock-up</div></div>
-          <div class="stat"><div class="big">auto-compliant</div><div class="lab">safe-zone breaches detected and fixed before delivery, no manual checking</div></div>
-          <div class="stat"><div class="big">batch variations</div><div class="lab">many on-brand options generated at once for selection and testing</div></div>
+          <div class="stat"><div class="big">unlimited revisions</div><div class="lab">refine any image in chat; safe-zone breaches auto-fixed before delivery</div></div>
         </div>
       </div>
     </div>
@@ -520,8 +470,8 @@
 </div>
 
 <section>
-    <h2 class="sec">More</h2>
-    <p class="actions"><a href="index.html">View resume</a><a href="cover.html">Cover letter</a></p>
+    <h2 class="sec">Resume</h2>
+    <p class="actions"><a href="index.html">View resume</a><a href="assets/pdf/Uday_Barooah_Sport_Resume.pdf">Download PDF</a></p>
   </section>
 </div>
 
